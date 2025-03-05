@@ -1,0 +1,645 @@
+/*Importancion de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Syne:wght@400..800&display=swap');
+/*Selector universal*/
+*{
+    font-family: "Inter", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*Clase para los H1*/
+.H1t{
+    color:#F2D8A7 ;
+    font-family: "syne", serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+/*Clase para los H2*/
+.H2T{
+    color: #F2D8A7;
+    font-family: "syne", serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3{
+    color: #a67d32;
+    font-family: "syne", serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+h4{
+    color: #a67d32;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*Header*/
+.imagenLogo{
+    object-fit: contain;
+    height: 100%;
+    height: 10vh;
+}
+.Aestilo{
+     a{
+        margin: 10px;
+        padding:20px 90px 20px 90px;
+        border-radius: 20px;
+        background-color: #a67d32;
+        font-size: 16px;
+        text-align: center;
+        width: 190.85px;
+        }
+}
+/* Enlaces en la barra de navegación */
+.navbar .nav-item .nav-link {
+    color: #F2D8A7;
+}
+
+/* Enlace activo en la barra de navegación */
+.navbar .navbar-nav .nav-link.active {
+    color: #F2D8A7;
+    background-color: #6c511f;
+}
+
+/* Hover en los enlaces de la navbar */
+.navbar-nav .nav-link:hover {
+    background-color: #ca993d;
+    color: #F2D8A7;
+}
+
+/* Color del botón dropdown */
+.navbar .nav-item .dropdown-toggle {
+    color: #F2D8A7;
+}
+
+/* Color del botón dropdown abierto */
+.navbar .nav-item .dropdown-toggle.show {
+    color: #F2D8A7;
+}
+
+/* Estilo del menú desplegable */
+.navbar .nav-item .dropdown-menu {
+    border: none;
+    background-color: #6c511f;
+}
+
+/* Elementos dentro del dropdown */
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: #F2D8A7;
+}
+
+/* Hover en los elementos del dropdown */
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #ca993d;
+    color: #F2D8A7;
+}
+
+/* Elemento activo dentro del dropdown */
+.navbar .nav-item .dropdown-menu .dropdown-item.active {
+    background-color: #6c511f;
+    color: #F2D8A7;
+}
+
+/* Centrar elementos del navbar en colapso */
+.navbar-collapse {
+    text-align: center;
+    color: #F2D8A7;
+}
+
+@media (max-width: 780px) {
+    .imagenLogo{
+        object-fit: contain;
+        height: 100%;
+        height: 8vh;
+    }
+    .Aestilo{
+         a{
+            margin: 10px;
+            border-radius: 20px;
+            background-color: #a67d32;
+            font-size: 1rem;
+            text-align: start;
+            }
+    }
+    .navbar-nav .nav-link {
+        display: block;
+        width: 95%;
+        text-align: center;
+      }
+    .navbar-toggler{
+        border: none;
+        order: -1;
+    }
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+    background-color: rgba(201, 164, 94, 0.8); 
+    border: none;
+    }
+    .navbar-collapse {
+        margin-top: 10px; 
+        margin-right: 20px; 
+        background-color: rgba(201, 164, 94, 0.8);
+        border-radius: 10px;
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item {
+        color: #F2D8A7;
+        width: 95%;
+    }
+    
+}
+
+/*Footer*/
+.Footerbg{
+    background-color: #a67d32;
+    color: #F2D8A7;
+    a{
+        text-decoration: none;
+        color: #F2D8A7;
+    }
+    h4{
+        color: #F2D8A7; 
+    }
+}
+.linkredes{
+    font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .linkredes{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+/*Página Inicio*/
+.SeccionPrincipalInicio{
+    background-image: url(../assets/IMG/Imagen\ INICIO.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    text-align:start;
+    padding: 150px 950px 110px 20px;/*50px 1100px 250px 40px/*/
+    /* segunda versión del padding 250px 40px 110px 1065px;*/
+        h1{
+            color: #F2D8A7;
+        }
+        p{
+            color: #F2D8A7;
+        }
+        a{
+            margin-top:20px;
+            display: inline-block;
+            color:#734E40;
+            padding:10px 85px 10px 85px;
+            border-radius: 10px;
+            background-color: #F2D8A7;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .SeccionPrincipalInicio{
+        background-image:url(../assets/IMG/ImagenINICIOmovilverde.png);
+        padding: 500px 50px 30px 50px;
+        height: 100vh;
+        background-position:center;
+        text-align: center;
+        a{
+            font-size: 1rem;
+            padding:10px 30px 10px 30px;
+            margin-top: 0px;
+            border-radius: 10px;
+        }
+       
+        h1{
+            font-size:1.5rem;
+        }
+        p{
+            display: none;
+        }
+            
+    }
+}
+/*SeccionClases*/
+.seccionEncuentraP{
+    background-image: url(../assets/IMG/EncuentraP.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 60vh;
+    text-align: end;
+    padding-top: 300px;
+    a{
+        margin-top:20px;
+        display:inline-block;   
+        color:#734E40;
+        padding:10px 40px 10px 40px;
+        border-radius: 10px;
+        background-color: #F2D8A7;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+      }
+}
+.seccionEncuentraY{
+    background-image: url(../assets/IMG/EncuentraY.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 60vh;
+    text-align: end;
+    padding-top: 300px;
+    a{
+        margin-top:20px;
+        display:inline-block;
+        color:#734E40;
+        padding:10px 40px 10px 40px;
+        border-radius: 10px;
+        background-color: #F2D8A7;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+      }
+}
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: 2rem;
+    }
+    .seccionEncuentraP{
+        height: 100%;
+        height: 50vh;
+        text-align: end;
+        padding-top: 200px;
+        h2{
+            font-size: 2rem;
+        }
+        a{
+            margin-top:5px;
+            padding:10px 30px 10px 30px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+    }
+    .seccionEncuentraY{
+        height: 100%;
+        height: 50vh;
+        text-align: end;
+        padding-top: 200px;
+        h2{
+            font-size: 2rem;
+        }
+        a{
+            margin-top:5px;
+            padding:10px 30px 10px 30px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 700;
+          }
+    }
+}
+
+/*Seccion conocé el estudio*/
+.carouselimg {
+    height: 100%;
+    height: 70%; 
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2{
+        font-size: 2rem;
+    }
+    .carousel-inner{
+        height: auto;
+    }
+  }
+/*Sección reseñas*/
+.Reseñas{
+    p{
+        color: #6c511f;
+    }
+    h2{
+        color: #a58d5f;
+    }
+    h3{
+        color: #8e7850;
+        font-size: 1rem;
+    }
+} 
+@media screen and (max-width: 768px) {
+    .Reseñas{
+        h2{
+            font-size: 2rem;
+        }
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+/*Página nosotros*/
+.secciónPrincipalNosotrosIzq{
+    background-image: url(../assets/IMG/NOSOTROS.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+    height: 100vh;
+    h1 {
+        padding-top: 150px;
+        padding-left: 20px;
+        color: #F2D8A7;
+        font-family: "syne", serif;
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .secciónPrincipalNosotrosIzq{
+        padding: 150px 20px 30px 20px;
+        h1 {
+            padding-top: 0px;
+            padding-left: 0px;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+.secciónPrincipalNosotrosDrcha{
+    padding-top: 200px;
+    p{
+        color: #6c511f;
+    }
+    a{
+        display:inline-block;
+        color:#F2D8A7;
+        margin-top: 20px;
+        padding:20px 100px 20px 100px;
+        border-radius: 20px;
+        background-color: #a67d32;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+      }
+}
+@media screen and (max-width: 768px){
+    .secciónPrincipalNosotrosDrcha{
+        padding: 50px 40px 30px 40px;
+        p{
+            font-size: 1rem;
+        }
+        a{
+            font-size: 1rem;
+            padding:10px 50px 10px 50px;
+            border-radius: 10px;
+        }
+    }
+}
+/*Sección de Instructores*/
+.colorTituloI{
+    color: #a58d5f;
+}
+.seccionIntruct{
+    img{
+        object-fit: cover;
+        width: 80%;
+        height: 100%;
+        height: 20vh;
+    }
+    h2{
+        color: #a58d5f;
+        margin-top: 50px;
+    }
+    a{
+        color:#F2D8A7;
+        padding:20px 40px 20px 40px;
+        border-radius: 20px;
+        background-color: #a67d32;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+    h3{
+        margin-top: 20px;
+        color:#a67d32;
+        font-size: 25px;
+    }
+    p{
+        color: #6c511f;
+        margin-bottom: 30px;
+    }
+}
+.botonTH{
+    a{
+        margin-top:50px;
+        margin-left: 100px;
+        display:inline-block;
+        color:#F2D8A7;
+        padding:20px 220px 20px 220px;
+        border-radius: 20px;
+        background-color: #a67d32;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionIntruct{
+        img{
+            height: 100%;
+            height: 30vh;
+            width: 60%;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        a{
+            font-size: 1rem;
+            padding:10px 30px 10px 30px;
+            border-radius: 10px;
+        }
+    }
+    .botonTH{
+        a{
+            font-size: 1rem;
+            padding:10px 50px 10px 50px;
+            border-radius: 10px;
+        }
+    }
+}
+
+/*Sin BOOTSTRAP*/
+/*Página Clases*/
+.seccionClases{
+    display: flex;
+    flex-wrap: wrap;
+    h1{
+        color: #F2D8A7;
+        font-size: 80px;
+    }
+    h2{
+        color: #F2D8A7;
+        font-size: 60px;
+    }
+    h3{
+        color: #F2D8A7;
+        font-size: 40px;
+    }
+    div{
+        margin-top: 300px;
+    }
+    .SeccionIzqPilates{
+        background-image: url(../assets/IMG/Pilates\ -\ Clases.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        height: 100vh;
+        width: 50%;
+    }
+    .SeccionDrchaYoga{
+        background-image: url(../assets/IMG/Yoga\ -clases.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        height: 100vh;
+        width: 50%;
+    }
+    a{
+        margin-top:50px;
+        color:#734E40;
+        padding:10px 40px 10px 40px;
+        border-radius: 10px;
+        background-color: #F2D8A7;
+        font-size: 16px;
+        font-weight: 700px;
+        text-align: center;
+    }
+    
+}
+
+/*Página Pilates*/
+.seccionPilates{
+    display: flex;
+    flex-wrap: wrap;
+}
+.seccionPilatesR{
+    background-image: url(../assets/IMG/Reformer.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    text-align: start;
+    padding: 30px;
+    width: 33%;
+
+}
+.seccionPilatesM{
+    background-image: url(../assets/IMG/Matt.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    text-align: start;
+    padding: 30px;
+    width: 33%;
+
+}
+.seccionPilatesS{
+    background-image: url(../assets/IMG/Stott.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    text-align: start;
+    padding: 30px;
+    width: 33%;
+}
+/*Página Yoga*/
+.seccionY{
+    display: flex;
+    flex-wrap: wrap;
+}
+.seccionYogaA{
+    background-image: url(../assets/IMG/Yoga\ Ashtanga1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    width: 33%;
+}
+.seccionYogaV{
+    background-image: url(../assets/IMG/YogaVinsaya.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    width: 33%;
+}
+.seccionYogaR{
+    background-image: url(../assets/IMG/Restaurativo.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    width: 33%;
+}
+/*Página Horarios*/
+.seccionPrincipalHorarios{
+    background-image: url(../assets/IMG/HORARIOSo.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+}
+.HorariosP{
+    background-color: #F2D8A7;
+    border-radius: 30px;
+    padding: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.horarioY{
+    background-color: #F2D8A7;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+/*Página Contacto*/
+.contacto{
+    display: flex;
+}
+.SeccionPrincipalContacto{
+    background-image: url(../assets/IMG/CONTACTO.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+}
+.SeccionC{
+    padding: 30px;
+    width: 50%;
+    height: 50%;
+    height: 50vh;
+    
+}
