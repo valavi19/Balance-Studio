@@ -5,11 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto | Balance Studio</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/estilos.css"> 
         <script src="https://kit.fontawesome.com/a1e1588f6d.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="../css/estilos.css"> 
     </head>
     <body>
       <header>
@@ -57,91 +55,99 @@
           </nav>
       </header>
         <main>
-            <Section class="SeccionPrincipalContacto">
-                <h1 class="TítuloP">QUEREMOS SABER DE VOS</h1>
-            </Section>
-            <section class="contacto">
-                <section class="SeccionC"><h2 class="TítuloS">Contacto</h2>
-                    <form action="">
-                        <div> 
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" id="Nombre" placeholder="Ingresa tu nombre" required>
-                        </div>
-                       <div>
-                        <label for="Mail">Mail</label>
-                        <input type="email" id="Mail" placeholder="Ingresa tu correo electrónico" required>
+          <div class="container-fluid g-0">
+            <div class="SeccionPrincipalContacto">
+              <h1 class="H1t">QUEREMOS SABER DE VOS</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="SeccionC ps-3">
+                  <h2 class="H2T">Contacto</h2>
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
                     </div>
-                    <div>
-                        <label for="Asunto">Asunto</label>
-                        <input type="text" id="Asunto" placeholder="Ingresa el asunto" required>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Mail</label>
+                      <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
                     </div>
-                    <div>
-                        <label for="Mensaje">Mensaje</label>
-                        <textarea name="" id="Mensaje" cols="20" rows="5" placeholder="Ingresa tu mensaje" required></textarea>
+                    <div class="mb-3">
+                      <label for="asunto" class="form-label">Asunto</label>
+                      <input type="text" class="form-control" id="asunto" placeholder="Ingresa el asunto">
                     </div>
-                    <div>
-                        <input type="reset" value="Limpiar" id="Limpiar">
-                        <input type="submit" value="Enviar" id="Enviar">
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingresa tu mensaje"></textarea>
                     </div>
-                    </form></section>|
-                <section class="seccionM">
-                        <h2 class="TítuloS">Encontranos acá</h2>
-                        <div>
-                            <label for="sucursales"></label>
-                            <select name="Sucursales" id="sucur">
-                                <option value="sin" selected>Sucursales</option>
-                                <option value="Recoleta">Recoleta</option 
-                                <option value="Villa Urquiza">Villa Urquiza</option>
-                                <option value="Palermo">Palermo</option>
-                                <option value="Belgrano">Belgrano</option>
-                                <option value="Paternal">Paternal</option>
-                            </select>
-                            </div>
-                            <div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6606594439695!2d-58.39982222439398!3d-34.587451972960174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98d6402541%3A0x98304ee8c2dbbfab!2sAv.%20Pueyrred%C3%B3n%20%26%20Av.%20Gral.%20Las%20Heras%2C%20C1119%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1737834727057!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                </section>
-            </section>
+                    <div class="d-flex gap-2">
+                      <button type="reset" class="btn btn-secondary border-0">Limpiar</button>
+                      <button type="submit" class="btn btn-primary border-0">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="seccionM col-lg-6 col-md-12 col-12">
+                <h2 class="H2T">Encontranos acá</h2>
+                <div class="me-4">
+                  <label for="sucursales"></label>
+                  <select name="Sucursales" id="sucur" class="form-select mb-3">
+                    <option value="sin" selected>Sucursales</option>
+                    <option value="Recoleta">Recoleta</option>
+                    <option value="Villa Urquiza">Villa Urquiza</option>
+                    <option value="Palermo">Palermo</option>
+                    <option value="Belgrano">Belgrano</option>
+                    <option value="Paternal">Paternal</option>
+                  </select>
+                </div>
+                <div class="map-responsive">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6606594439695!2d-58.39982222439398!3d-34.587451972960174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98d6402541%3A0x98304ee8c2dbbfab!2sAv.%20Pueyrred%C3%B3n%20%26%20Av.%20Gral.%20Las%20Heras%2C%20C1119%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1737834727057!5m2!1ses!2sar" width="96%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <footer class="footer Footerbg">
-          <div class="row container-fluid g-0 mt-5 pt-4 ps-3 justify-content-evenly">
-             <div class="col-lg-2 col-md-1 col-12">
-               <img src="../assets/IMG/Group beige.png" alt="Logo Balance Studio" width="300px">
-             </div>
-             <div class="col-lg-2 col-md-1 col-12">
-               <nav> 
-                 <div class="list-group ps-5">
-                   <a href="../index.html" class="list-group-item list-group-item-action bg-transparent border-0  pb-1">Inicio</a>
-                   <a href="./nosotros.html" class="list-group-item list-group-item-action bg-transparent border-0  pb-1">Nosotros</a>
-                   <a href="./clases.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-1">Clases</a>
-                   <a href="./horarios.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-1 ">Horarios</a>
-                   <a href="./contacto.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-3 ">Contacto</a>
+          <div class="container-fluid g-0">
+            <div class="row mt-5 pt-4 ps-3 justify-content-evenly">
+              <div class="col-lg-2 col-md-1 col-12">
+                <img src="../assets/IMG/Group beige.png" alt="Logo Balance Studio" width="300px">
+              </div>
+              <div class="col-lg-2 col-md-1 col-12">
+                <nav> 
+                  <div class="list-group ps-5">
+                    <a href="../index.html" class="list-group-item list-group-item-action bg-transparent border-0  pb-1">Inicio</a>
+                    <a href="./nosotros.html" class="list-group-item list-group-item-action bg-transparent border-0  pb-1">Nosotros</a>
+                    <a href="./clases.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-1">Clases</a>
+                    <a href="./horarios.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-1 ">Horarios</a>
+                    <a href="./contacto.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-3 ">Contacto</a>
+                  </div>
+                </nav>
+              </div>
+              <div class="col-lg-2 col-md-1 col-12">
+                <ul class="list-group ps-5">
+                  <li class="list-group-item bg-transparent border-0 pb-1">Términos y condiciones</li>
+                  <li class="list-group-item bg-transparent border-0 pb-1">Políticas de devoluciones</li>
+                  <li class="list-group-item bg-transparent border-0 pb-1">Formas de pago</li>
+                  <li class="list-group-item bg-transparent border-0 pb-1">Ayuda</li>
+                  <li class="list-group-item bg-transparent border-0 pb-3">Preguntas frecuentes</li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-1 col-12">
+                <ul class="list-group ps-5">
+                  <li class="list-group-item bg-transparent border-0 pb-1">Trabaja con nosotros</li>
+              </div>
+              <div class="col-lg-2 col-md-1 col-12 linkredes">
+                <h4>Síguenos en redes sociales</h4>
+                <div class="ms-5">
+                 <a href="https://workspace.google.com/intl/es-419_ar/gmail/" class="mail"><i class="fa-solid fa-square-envelope"></i>
+                 <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i>
+                 <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-square-facebook"></i>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>
                  </div>
-               </nav>
-             </div>
-             <div class="col-lg-2 col-md-1 col-12">
-               <ul class="list-group ps-5">
-                 <li class="list-group-item bg-transparent border-0 pb-1">Términos y condiciones</li>
-                 <li class="list-group-item bg-transparent border-0 pb-1">Políticas de devoluciones</li>
-                 <li class="list-group-item bg-transparent border-0 pb-1">Formas de pago</li>
-                 <li class="list-group-item bg-transparent border-0 pb-1">Ayuda</li>
-                 <li class="list-group-item bg-transparent border-0 pb-3">Preguntas frecuentes</li>
-               </ul>
-             </div>
-             <div class="col-lg-2 col-md-1 col-12">
-               <ul class="list-group ps-5">
-                 <li class="list-group-item bg-transparent border-0 pb-1">Trabaja con nosotros</li>
-             </div>
-             <div class="col-lg-2 col-md-1 col-12 linkredes">
-              <h4>Síguenos en redes sociales</h4>
-              <div class="ms-5">
-               <a href="https://workspace.google.com/intl/es-419_ar/gmail/"><i class="fa-solid fa-square-envelope"></i>
-               <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i>
-               <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-square-facebook"></i>
-               <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>
-               </div>
-            </div>
-         </div>
+              </div>
+          </div> 
+          </div>
        </footer>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>

@@ -5,10 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yoga | Balance Studio</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/a1e1588f6d.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
         <header>
@@ -55,63 +54,70 @@
                 </div>
               </nav>
         </header>
-    <main class="seccionY">
-        <section class="seccionYogaA">
-            <h1 class="TítuloP">Yoga</h1>
-            <div>
-                <h2 class="TítuloS">Yoga Ashtanga</h2>
+    <main class="seccionY container-fluid">
+      <div class="row">
+          <div class="seccionYogaA col-lg-4 col-md-4 col-12">
+            <div class="position-relative">
+              <h1 class="H1t">Yoga</h1>
+            <button class="btn btn-primary border-0 bg-transparent ps-0" data-bs-toggle="collapse" data-bs-target="#ashtanga">
+              <h2 class="H2T">Yoga Ashtanga</h2>
+            </button>
+            <div class="collapse collapse-up mt-1" id="ashtanga">
+                <p>El Yoga Ashtanga es una práctica dinámica y energética que combina respiración y movimiento en una serie de posturas.</p>
+                <p>Es perfecto para quienes buscan una práctica estructurada, desafiante y profundamente meditativa.</p>
             </div>
-            <div>
-                <p class="Párrafo">El Yoga Ashtanga es una práctica dinámica y energética que combina respiración y movimiento en una serie de posturas. Imagina una "coreografía" fluida donde cada postura se conecta con la siguiente a través de transiciones llamadas vinyasas.</p>
-                <p class="Párrafo">Esto no solo fortalece el cuerpo y mejora la flexibilidad, sino que también calma la mente. Es perfecto para quienes buscan una práctica estructurada, desafiante y profundamente meditativa. ¡Es como una danza entre el cuerpo, la mente y la respiración!</p>
+              <div class="d-grid gap-2 col-12 mt-1">
+                <a class="btn btn-primary border-0 py-3 rounded-4" href="./horarios.html" role="button">Conocé los horarios</a>
+              </div>
             </div>
-            <div>
-                <a href="./horarios.html" class="AcciónS">Conocé los horarios</a>
+          </div>
+          <div class="seccionYogaV col-lg-4 col-md-4 col-12">
+            <div class="position-relative">
+              <button class="btn btn-primary border-0 bg-transparent ps-0" data-bs-toggle="collapse" data-bs-target="#vinsaya">
+                <h2 class="H2T">Yoga Vinyasa</h2>
+              </button>
+              <div class="collapse collapse-up mt-1" id="vinsaya">
+                <p>El Yoga Vinyasa es una práctica fluida y creativa donde las posturas se conectan como una secuencia al ritmo de tu respiración.</p>
+                <p>Es ideal si buscas energía, variedad y una manera de moverte mientras encuentras calma y enfoque.</p>
             </div>
-        </section>
-        <section class="seccionYogaV">
-            <div>
-            <h2 class="TítuloS">Yoga Vinyasa</h2>
+            <div class="d-grid gap-2 col-12 mt-1">
+              <a class="btn btn-primary border-0 py-3 rounded-4" href="./horarios.html" role="button">Conocé los horarios</a>
             </div>
-            <div>
-                <p class="Párrafo">El Yoga Vinyasa es una práctica fluida y creativa donde las posturas se conectan como una secuencia al ritmo de tu respiración. Es como una coreografía que combina fuerza, flexibilidad y equilibrio, todo en movimiento constante.</p>
-                <p class="Párrafo">No hay dos clases iguales, ya que cada práctica puede adaptarse a diferentes niveles y necesidades. Es ideal si buscas energía, variedad y una manera de moverte mientras encuentras calma y enfoque.</p>
             </div>
-            <div><a href="./horarios.html" class="AcciónS">Conocé los horarios</a></div>
-        </section>
-        <section class="seccionYogaR">
-            <div>
-                <h2 class="TítuloS">Yoga Restaurativo</h2>
+        </div>
+        <div class="seccionYogaR col-lg-4 col-md-4 col-12">
+            <div class="position-relative">
+                <button class="btn btn-primary border-0 bg-transparent ps-0" data-bs-toggle="collapse" data-bs-target="#restaurativo">
+                <h2 class="H2T">Yoga Restaurativo</h2>
+                </button>
+                <div class="collapse collapse-up mt-1" id="restaurativo">
+                  <p>El Yoga Restaurativo es como un abrazo para tu cuerpo y mente. Es una práctica relajante donde utilizas accesorios como cojines, mantas y bloques para mantener posturas cómodas durante varios minutos.</p>
+                  <p>Es perfecto para relajarte después de un día agitado, aliviar el estrés.</p>
+              </div>
+              <div class="d-grid gap-2 col-12 mt-1">
+                <a class="btn btn-primary border-0 py-3 rounded-4" href="./horarios.html" role="button">Conocé los horarios</a>
+              </div>
             </div>
-            <div>
-                <p class="Párrafo">El Yoga Restaurativo es como un abrazo para tu cuerpo y mente. Es una práctica súper suave y relajante donde utilizas accesorios como cojines, mantas y bloques para mantener posturas cómodas durante varios minutos.</p>
-                <p class="Párrafo">Esto ayuda a liberar tensiones profundas, calmar la mente y restaurar la energía. Es perfecto para relajarte después de un día agitado, aliviar el estrés o simplemente regalarte un momento de cuidado. ¡Es el yoga del descanso y el bienestar!</p>
-            </div>
-            <div>
-                <a href="./horarios.html" class="AcciónS">Conocé los horarios</a>
-            </div>
-        </section>
+        </div>
+      </div>
         <Section class="videosY">
-            <h3 class="TítuloT">Vídeos que te podrían gustar antes de comenzar tus clases</h3>
-                <div>
-                    <h4 class="Título4">Yoga Ashtanga</h4>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zI4IDaNKB3c?si=BnOtuMpbmFbQdXJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h4 class="Título4">Yoga Vinsaya</h4>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_pKC8afNWYg?si=JE_0ovix6sqmff2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h4 class="Título4">Yoga Restaurativo</h4>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kFbI7rG5pLo?si=zAyvcXsC8dqNKKqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-        </Section>
+            <h3 class="ps-lg-3 mt-lg-2 mt-1">Aprende antes de tus clases</h3>
+          <div class="row justify-content-evenly">
+            <div class="col-lg-4 col-md-4 col-12">
+              <h4 class="ps-lg-3 ps-1">Yoga Ashtanga</h4>
+                <iframe width="400" height="250" class="rounded-4"src="https://www.youtube.com/embed/zI4IDaNKB3c?si=BnOtuMpbmFbQdXJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          <div class="col-lg-4 col-md-4 col-12">
+              <h4 class="ps-lg-3 ps-1">Yoga Vinsaya</h4>
+                <iframe class="rounded-4" width="400" height="250" src="https://www.youtube.com/embed/_pKC8afNWYg?si=JE_0ovix6sqmff2r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+              <h4 class="ps-lg-3 ps-1">Yoga Restaurativo</h4>
+              <iframe class="rounded-4" width="400" height="250" src="https://www.youtube.com/embed/kFbI7rG5pLo?si=zAyvcXsC8dqNKKqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </Section>
     </main>
     <footer class="footer Footerbg">
       <div class="row container-fluid g-0 mt-5 pt-4 ps-3 justify-content-evenly">
@@ -145,7 +151,7 @@
          <div class="col-lg-2 col-md-1 col-12 linkredes">
           <h4>Síguenos en redes sociales</h4>
           <div class="ms-5">
-           <a href="https://workspace.google.com/intl/es-419_ar/gmail/"><i class="fa-solid fa-square-envelope"></i>
+           <a href="https://workspace.google.com/intl/es-419_ar/gmail/" class="mail"><i class="fa-solid fa-square-envelope"></i>
            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i>
            <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-square-facebook"></i>
            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>

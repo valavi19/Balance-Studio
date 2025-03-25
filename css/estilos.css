@@ -39,7 +39,7 @@ h4{
 .imagenLogo{
     object-fit: contain;
     height: 100%;
-    height: 10vh;
+    height: 7vh;
 }
 .Aestilo{
      a{
@@ -112,7 +112,7 @@ h4{
     .imagenLogo{
         object-fit: contain;
         height: 100%;
-        height: 8vh;
+        height: 5vh;
     }
     .Aestilo{
          a{
@@ -178,11 +178,27 @@ h4{
     }
 }
 @media (max-width: 768px) {
-    h4{
-        padding-top: 2rem;
-        padding-left: 3rem;
+    .Footerbg{
+        img{
+            padding-left: 2rem;
+        }
+        h4{
+            padding-top: 2rem;
+            padding-left: 3rem;
+        }
     }
-    
+    .linkredes{
+        h4{
+            margin-left: 0rem;
+        }
+        a{
+            font-size: 3rem;
+            align-items: center;
+        }
+        .mail{
+            margin-left: 3rem;
+        }
+}
 }
 /*Página Inicio*/
 .SeccionPrincipalInicio{
@@ -202,13 +218,11 @@ h4{
         }
         a{
             color:#734E40;
-            padding:1rem 6rem 1rem 6rem;
             background-color: #F2D8A7;
             font-size: 16px;
             font-weight: 400;
             text-align: center;
             text-decoration: none;
-            border: none;
         }
         .btn-primary:hover{
             background-color: #6c511f;
@@ -219,7 +233,7 @@ h4{
 @media screen and (max-width: 768px) {
     .SeccionPrincipalInicio{
         background-image:url(../assets/IMG/ImagenINICIOmovilverde.png);
-        padding: 25rem 4rem 2rem 4rem;
+        padding: 32rem 2rem 2rem 2rem;
         height: 100vh;
         background-position:center;
         text-align: center;
@@ -230,12 +244,17 @@ h4{
             }
         
             .H1t{
-                font-size:1.5rem;
+                font-size:2rem;
             }
             p{
                 display: none;
             }
                 
+    }
+}
+@media screen and (max-width: 480px){
+    .SeccionPrincipalInicio{
+        padding: 23rem 2rem 2rem 2rem;
     }
 }
 /*SeccionClases*/
@@ -245,13 +264,10 @@ h4{
     background-position: center;
     height: 100%;
     height: 60vh;
-    text-align: end;
     padding-top: 18rem;
     a{
-        margin-top:2rem;
-        display:inline-block;   
+        margin-top:2rem; 
         color:#734E40;
-        padding:1rem 3rem 1rem 3rem;
         background-color: #F2D8A7;
         font-size: 1rem;
         font-weight: 400;
@@ -502,10 +518,12 @@ h4{
         color: #F2D8A7;
         font-size: 4rem;
     }
-    h3{
+    span{
         color: #F2D8A7;
+        font-family: "syne", serif;
         font-size: 3rem;
-        opacity: 90%;
+        font-weight: 700;
+        opacity: 70%;
     }
     .SeccionIzqPilates{
         background-image: url(../assets/IMG/Pilates\ -\ Clases.png);
@@ -513,7 +531,7 @@ h4{
         background-position: center;
         height: 100%;
         height: 100vh;
-        padding-top: 25rem;
+        padding-top: 23rem;
     }
     .SeccionDrchaYoga{
         background-image: url(../assets/IMG/Yoga\ -clases.png);
@@ -521,7 +539,7 @@ h4{
         background-position: center;
         height: 100%;
         height: 100vh;
-        padding-top: 25rem;
+        padding-top: 23rem;
     }
     a{
         color:#734E40;
@@ -535,17 +553,206 @@ h4{
         background-color: #6c511f;
         color: #F2D8A7;}
 }
-
+@media screen and (max-width: 768px){
+    .seccionClases{
+        .H1t{
+            font-size: 3rem;
+        }
+        .H2T{
+            font-size: 3rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+        .SeccionIzqPilates{
+            height: 100%;
+            height: 50vh;
+            padding-top: 10rem;
+        }
+        .SeccionDrchaYoga{
+            height: 100%;
+            height: 50vh;
+            padding-top: 10rem;
+        }
+        a{
+            color:#734E40;
+            background-color: #F2D8A7;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn-primary:hover{
+            background-color: #6c511f;
+            color: #F2D8A7;}
+    }
+}
+@media screen and (max-width: 480px){
+    .seccionClases{
+        .SeccionIzqPilates{
+            padding-top: 5rem;
+        }
+        .SeccionDrchaYoga{
+            padding-top: 5rem;
+        }
+    }
+}
 /*Página Pilates*/
 .seccionPilates{
+    .H2T{
+        color: #F2D8A7;
+        font-size: 2rem;
+        font-family: "syne", serif;
+        opacity: 90%;
+    }
+    p{
+        color: #F2D8A7;
+        font-size: 1rem;
+        opacity: 90%;
+    }
+    a{
+        color:#734E40;
+        background-color: #F2D8A7;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
     .seccionPilatesR{
-    background-image: url(../assets/IMG/Reformer.png);
+        background-image: url(../assets/IMG/Reformer.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        height: 100vh;
+        text-align: start; 
+        padding: 32rem 3rem 10rem 3rem;
+        .btn-primary:hover{
+            background-color: #6c511f;
+            color: #F2D8A7;}
+        .collapse-up {
+            position: absolute;
+            bottom: 100%; /* Lo coloca arriba del botón */
+            left: 50%;
+            transform: translateX(-50%); /* Centra horizontalmente */
+            z-index: 1000; /* Asegura que esté por encima */
+            width: 100%;
+            }    
+}
+.seccionPilatesM{
+    background-image: url(../assets/IMG/Matt.png);
     background-size: cover;
-    background-position: start;
+    background-position: center;
     height: 100%;
     height: 100vh;
-    text-align: start; 
-    padding: 25rem 3rem 10rem 3rem;
+    text-align: start;
+    padding: 36rem 3rem 10rem 3rem;
+    .btn-primary:hover{
+        background-color: #6c511f;
+        color: #F2D8A7;}
+    .collapse-up {
+        position: absolute;
+        bottom: 100%; /* Lo coloca arriba del botón */
+        left: 50%;
+        transform: translateX(-50%); /* Centra horizontalmente */
+        z-index: 1000; /* Asegura que esté por encima */
+        width: 100%;
+        }  
+}
+.seccionPilatesS{
+    background-image: url(../assets/IMG/Stott.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 100vh;
+    text-align: start;
+    padding: 36rem 3rem 10rem 3rem;
+    .btn-primary:hover{
+        background-color: #6c511f;
+        color: #F2D8A7;}
+    .collapse-up {
+        position: absolute;
+        bottom: 100%; /* Lo coloca arriba del botón */
+        left: 50%;
+        transform: translateX(-50%); /* Centra horizontalmente */
+        z-index: 1000; /* Asegura que esté por encima */
+        width: 100%;
+        }  
+ }
+}
+.videosP{
+    h3{
+        color: #8e7850;
+        font-size: 3rem;
+        font-family: "syne", serif;
+        font-weight: 700;
+    }
+    h4{
+        color: #8e7850;
+        font-size: 2rem;
+        opacity: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionPilates{
+        .seccionPilatesR{
+            height: 64vh;
+            padding-top: 15rem;
+        }
+       .seccionPilatesM,.seccionPilatesS{
+            height: 50vh;
+            padding-top: 15rem;
+       }
+    }
+    .videosP{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 2rem;
+            padding-top: 0rem;
+        }
+        iframe{
+            margin-bottom: 0rem;
+            align-items: center;
+            margin-left: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .seccionPilates{
+        .seccionPilatesR{
+            height: 100%;
+            height: 50vh;
+            padding-top: 6rem;
+        }
+       .seccionPilatesM,.seccionPilatesS{
+            height: 100%;
+            height: 33vh;
+            padding-top: 3rem;
+            .img{
+                object-position: bottom;
+            }
+       }
+    }
+    .collapse-up{
+        display: none;
+    }
+    .videosP{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        iframe{
+            margin-bottom: 0rem;
+            align-items: center;
+            margin-left: 0rem;
+        }
+    }
+}
+/*Página Yoga*/
+.seccionY{
     .H1t{
         color: #F2D8A7;
         font-size: 3rem;
@@ -568,74 +775,67 @@ h4{
         text-align: center;
         text-decoration: none;
     }
-    .btn-primary:hover{
-        background-color: #6c511f;
-        color: #F2D8A7;}
-}
-.seccionPilatesM{
-    background-image: url(../assets/IMG/Matt.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    height: 100vh;
-    text-align: start;
-    padding: 29rem 3rem 10rem 3rem;
-    .H2T{
-        color: #F2D8A7;
-        font-size: 2rem;
-        opacity: 90%;
+    .seccionYogaA{
+        background-image: url(../assets/IMG/Yoga\ Ashtanga1.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        height: 100vh;
+        padding: 32rem 3rem 10rem 3rem;
+        .btn-primary:hover{
+            background-color: #6c511f;
+            color: #F2D8A7;}
+        .collapse-up {
+            position: absolute;
+            bottom: 100%; /* Lo coloca arriba del botón */
+            left: 50%;
+            transform: translateX(-50%); /* Centra horizontalmente */
+            z-index: 1000; /* Asegura que esté por encima */
+            width: 100%;
+            }    
     }
-    p{
-        color: #F2D8A7;
-        font-size: 1rem;
-        opacity: 90%;
+    .seccionYogaV{
+        background-image: url(../assets/IMG/YogaVinsaya.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        height: 100vh;
         text-align: start;
+        padding: 36rem 3rem 10rem 3rem;
+        .btn-primary:hover{
+            background-color: #6c511f;
+            color: #F2D8A7;}
+        .collapse-up {
+            position: absolute;
+            bottom: 100%; /* Lo coloca arriba del botón */
+            left: 50%;
+            transform: translateX(-50%); /* Centra horizontalmente */
+            z-index: 1000; /* Asegura que esté por encima */
+            width: 100%;
+            }    
     }
-    a{
-        color:#734E40;
-        background-color: #F2D8A7;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        text-decoration: none;
+    .seccionYogaR{
+        background-image: url(../assets/IMG/Restaurativo.png);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        height: 100vh;
+        text-align: start;
+        padding: 36rem 3rem 10rem 3rem;
+        .btn-primary:hover{
+            background-color: #6c511f;
+            color: #F2D8A7;}
+        .collapse-up {
+            position: absolute;
+            bottom: 100%; /* Lo coloca arriba del botón */
+            left: 50%;
+            transform: translateX(-50%); /* Centra horizontalmente */
+            z-index: 1000; /* Asegura que esté por encima */
+            width: 100%;
+            }    
     }
-    .btn-primary:hover{
-        background-color: #6c511f;
-        color: #F2D8A7;}
 }
-.seccionPilatesS{
-    background-image: url(../assets/IMG/Stott.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    height: 100vh;
-    text-align: start;
-    padding: 29rem 3rem 10rem 3rem;
-    .H2T{
-        color: #F2D8A7;
-        font-size: 2rem;
-        font-family: "syne", serif;
-        opacity: 90%;
-    }
-    p{
-        color: #F2D8A7;
-        font-size: 1rem;
-        opacity: 90%;
-    }
-    a{
-        color:#734E40;
-        background-color: #F2D8A7;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        text-decoration: none;
-    }
-    .btn-primary:hover{
-        background-color: #6c511f;
-        color: #F2D8A7;}
- }
-}
-.videosP{
+.videosY{
     h3{
         color: #8e7850;
         font-size: 3rem;
@@ -648,81 +848,171 @@ h4{
         opacity: 90%;
     }
 }
-/*Sin BOOTSTRAP*/
-/*Página Yoga*/
-.seccionY{
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 768px){
+    .seccionY{
+        .seccionYogaA{
+            height: 64vh;
+            padding-top: 15rem;
+        }
+        .seccionYogaV,.seccionYogaR{
+            height: 50vh;
+            padding-top: 15rem;
+       }
+    }
+    .videosY{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 2rem;
+            padding-top: 0rem;
+        }
+        iframe{
+            margin-bottom: 0rem;
+            align-items: center;
+            margin-left: 2rem;
+        }
+    }
 }
-.seccionYogaA{
-    background-image: url(../assets/IMG/Yoga\ Ashtanga1.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    height: 100vh;
-    width: 33%;
-}
-.seccionYogaV{
-    background-image: url(../assets/IMG/YogaVinsaya.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    height: 100vh;
-    width: 33%;
-}
-.seccionYogaR{
-    background-image: url(../assets/IMG/Restaurativo.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    height: 100vh;
-    width: 33%;
+@media screen and (max-width: 480px){
+    .seccionY{
+        .seccionYogaA{
+            height: 100%;
+            height: 50vh;
+            padding-top: 6rem;
+        }
+        .seccionYogaV,.seccionYogaR{
+            height: 100%;
+            height: 33vh;
+            padding-top: 3rem;
+       }
+    }
+    .collapse-up{
+        display: none;
+    }
+    .videosY{
+        h3{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        iframe{
+            margin-bottom: 0rem;
+            align-items: center;
+            margin-left: 0rem;
+        }
+    }
 }
 /*Página Horarios*/
 .seccionPrincipalHorarios{
     background-image: url(../assets/IMG/HORARIOSo.png);
     background-size: cover;
-    background-position: center bottom;
+    background-position:center bottom;
     height: 100%;
     height: 100vh;
     width: 100%;
     text-align: center;
-
+    padding: 20rem 10rem 10rem 10rem;
+    .H1t{
+        color: #F2D8A7;
+        font-size: 3rem;
+    }
+    a{
+        color:#734E40;
+        background-color: #F2D8A7;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+    }
+    .btn-primary:hover{
+        background-color: #6c511f;
+        color: #F2D8A7;}
 }
-.HorariosP{
-    background-color: #F2D8A7;
-    border-radius: 30px;
-    padding: 30px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+/* Estilos generales de la tabla */
+.horariosP,.horariosY{
+    .H2T{
+        color:#8e7850;
+        font-size: 3rem;
+    }
+    .tablahP {
+        font-family: "Inter", serif;
+      }
+      /* Encabezado */
+      .tablahP thead th {
+        background-color: #a58d5f; 
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .tablahP tbody td {
+       color: #6c511f;
+    }
+    
+    .tablahP tbody td:hover {
+        background-color: #a58d5f;
+        opacity: 80%;
+        color:white;
+    }
+    .tablahP tbody th{
+        background-color: #a58d5f;
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
-.horarioY{
-    background-color: #F2D8A7;
-    border-radius: 30px;
-    padding: 30px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+@media screen and (max-width: 768px){
+    .seccionPrincipalHorarios{
+        padding: 20rem 3rem 0rem 3rem;
+    }
 }
-
+@media screen and (max-width: 480px){
+    .seccionPrincipalHorarios{
+        padding: 15rem 3rem 0rem 3rem;
+    }
+}
 /*Página Contacto*/
-.contacto{
-    display: flex;
-}
 .SeccionPrincipalContacto{
     background-image: url(../assets/IMG/CONTACTO.png);
     background-size: cover;
     background-position: center bottom;
     height: 100%;
-    height: 100vh;
-    width: 100%;
+    height: 62vh;
+    text-align: start;
+    padding: 22rem 2rem 0rem 2rem;
+    .H1t{
+        color: #F2D8A7;
+        font-size: 3rem;
+    }
 }
-.SeccionC{
-    padding: 30px;
-    width: 50%;
-    height: 50%;
+.SeccionC,.seccionM{
+    height: 100%;
     height: 50vh;
-    
+    margin: 3rem 0rem 10rem 0rem;
+    .H2T{
+        color:#8e7850;
+        font-size: 2rem;
+    }
+    .form-label{
+        color: #8e7850;
+    }
+    .form-control{
+        color: #8e7850;
+    }
+    .btn-secondary{
+        background-color: #F2D8A7;
+        color: #a67d32;
+    }
+    .btn-primary{
+        background-color: #a67d32;
+        color: #ffffff;
+    }
+    .btn-primary:hover{
+        background-color: #6c511f;
+        color: #F2D8A7;
+    }
 }
