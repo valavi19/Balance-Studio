@@ -46,7 +46,7 @@ h4{
         margin: 10px;
         padding:20px 90px 20px 90px;
         border-radius: 20px;
-        background-color: #a67d32;
+        background-color: #6c511f;
         font-size: 1rem;
         text-align: center;
         width: 190.85px;
@@ -60,7 +60,7 @@ h4{
 /* Enlace activo en la barra de navegación */
 .navbar .navbar-nav .nav-link.active {
     color: #F2D8A7;
-    background-color: #6c511f;
+    background-color: #ca993d;
 }
 
 /* Hover en los enlaces de la navbar */
@@ -242,7 +242,6 @@ h4{
                 padding:1rem 1rem 1rem 1rem;
                 margin-top: 1rem;
             }
-        
             .H1t{
                 font-size:2rem;
             }
@@ -1014,5 +1013,26 @@ h4{
     .btn-primary:hover{
         background-color: #6c511f;
         color: #F2D8A7;
+    }
+}
+@media screen and (max-width: 768px){
+    .SeccionPrincipalContacto{
+        padding: 10rem 3rem 0rem 3rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .SeccionPrincipalContacto{
+        background-size: cover;
+        padding: 8rem 2rem 0.5rem 2rem;
+        height: 50%;
+        background-image: url(../assets/IMG/CONTACTOMQ.png);
+        text-align: start;
+        .H1t{
+            font-size: 1.5rem;
+        }
+    }
+    .SeccionC,.seccionM{
+        margin-top: 1rem;
+        padding: 1rem 1rem 3rem 1rem;
     }
 }
