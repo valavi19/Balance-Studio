@@ -1,0 +1,291 @@
+//variables
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+.imagenLogo{
+    object-fit: contain;
+    height: 100%;
+    height: 7vh;
+}
+.Aestilo{
+     a{
+        @include boton($bg: $color-marron-oscuro, $color: none);
+        margin: 10px;
+        padding:20px 90px 20px 90px;
+        width: 190.85px;
+        border-radius:20px;
+        }
+}
+
+//Enlaces en la barra de navegación
+.navbar .nav-item .nav-link {
+    color: $color-beige;
+}
+
+//Enlace activo en la barra de navegación
+.navbar .navbar-nav .nav-link.active {
+    color: $color-beige;
+    background-color: $color-marron-tostado;
+}
+
+//Hover en los enlaces de la navbar
+.navbar-nav .nav-link:hover {
+    @include boton-hover($bg-hover: $color-marron-tostado, $color-hover: $color-beige)
+}
+
+//Color del botón dropdown
+.navbar .nav-item .dropdown-toggle {
+    color: $color-beige;
+}
+
+//Color del botón dropdown abierto
+.navbar .nav-item .dropdown-toggle.show {
+    color: $color-beige;
+}
+
+//Estilo del menú desplegable
+.navbar .nav-item .dropdown-menu {
+    border: none;
+    background-color: $color-marron-oscuro;
+}
+
+// Elementos dentro del dropdown
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: $color-beige;
+}
+
+//Hover en los elementos del dropdown
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    @include boton-hover($bg-hover: $color-marron-tostado, $color-hover: $color-beige)
+}
+
+//Elemento activo dentro del dropdown 
+.navbar .nav-item .dropdown-menu .dropdown-item.active {
+    @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
+}
+
+// Centrar elementos del navbar en colapso
+.navbar-collapse {
+    text-align: center;
+    color: $color-beige;
+}
+
+@media (max-width: 768px) {
+    .imagenLogo{
+        object-fit: contain;
+        height: 100%;
+        height: 5vh;
+    }
+    .Aestilo{
+         a{
+            margin: 1rem;
+            border-radius: 1rem;
+            background-color:$color-marron-claro;
+            font-size: 1rem;
+            text-align: start;
+            width: 100%;
+            }
+    }
+    .navbar-nav .nav-link {
+        display: block;
+        width: 90%;
+        text-align: center;
+      }
+    .navbar-toggler{
+        order: -1;
+    }
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+    background-color: $color-marron-claro-transparente; 
+    }
+    .navbar-collapse {
+        margin-top: 10px; 
+        margin-right: 20px; 
+        background-color: $color-marron-claro-transparente;
+        border-radius: 10px;
+    }
+    .navbar .nav-item .dropdown-menu .dropdown-item {
+        color: $color-beige;
+        width: 90%;
+    }
+}
+/*Footer*/
+.Footerbg{
+    width: 100%;
+    background-color: $color-marron-claro;
+    color: $color-beige;
+    a,h4,li{
+        color:$color-beige
+    }
+    .list-group .list-group-item:hover{
+        color:$color-marron-vino;
+    }
+}
+
+.linkredes{
+    h4{
+        font-size: $font-h2-movil;
+    }
+    a{
+        color: $color-beige;
+        text-decoration: none;
+        font-size: $font-h3;
+    }
+}
+@media (max-width: 768px) {
+    .Footerbg{
+        img{
+            padding-left: 2rem;
+        }
+        h4{
+            padding-top: 2rem;
+            padding-left: 3rem;
+        }
+    }
+    .linkredes{
+        h4{
+            margin-left: 0rem;
+        }
+        a{
+            font-size: 3rem;
+            align-items: center;
+        }
+        .mail{
+            margin-left: 3rem;
+        }
+    }
+}
+/*Página Inicio*/
+.SeccionPrincipalInicio{
+   @include bg-cover('../assets/IMG/Imagen INICIO.png');
+    height: 100vh;
+    text-align:start;
+    padding: 10rem 61rem 7rem 2rem;/*50px 1100px 250px 40px/*/
+    /* segunda versión del padding 250px 40px 110px 1065px;*/
+        .H1t,p{
+            color: $color-beige;
+        }
+        a{
+            @include boton ($bg: $color-beige, $color: $color-marron-profundo)
+        }
+        .btn-primary:hover{
+            @include boton-hover ($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .SeccionPrincipalInicio{
+        @include bg-cover-movil ('../assets/IMG/ImagenINICIOmovilverde.png');
+        padding: 32rem 2rem 2rem 2rem;
+        height: 100vh;
+
+            a{
+                font-size: $font-base;
+                padding:1rem 1rem 1rem 1rem;
+                margin-top: 1rem;
+            }
+            .H1t{
+                font-size:$font-btn-lg;
+            }
+            p{
+                display: none;
+            }
+                
+    }
+}
+@media screen and (max-width: 480px){
+    .SeccionPrincipalInicio{
+        padding: 23rem 2rem 2rem 2rem;
+    }
+}
+/*SeccionClases*/
+.seccionEncuentraP{
+    @include bg-cover ('../assets/IMG/EncuentraP.png');
+    height: 100%;
+    height: 60vh;
+    padding-top: 18rem;
+    a{
+        @include boton($bg: $color-beige, $color: $color-marron-profundo);
+        margin-top:2rem; 
+
+      .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
+        }
+    }
+}
+.seccionEncuentraY{
+    @include bg-cover('../assets/IMG/EncuentraY.png');
+    height: 100%;
+    height: 60vh;
+    text-align: end;
+    padding-top: 18rem;
+    a{
+        @include boton($bg: $color-beige, $color: $color-marron-profundo);
+        padding:1rem 3rem 1rem 3rem;
+    
+      }
+      .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
+        }
+ }
+
+@media screen and (max-width: 768px){
+    .H2T{
+        font-size: $font-h2-movil;
+    }
+    .seccionEncuentraP,.seccionEncuentraY{
+        height: 100%;
+        height: 50vh;
+        text-align: end;
+        padding-top: 13rem;
+        .H2T{
+            font-size: $font-btn-lg;
+        }
+        a{
+            margin-top:0.5rem;
+            padding:0.5rem 2rem 0.5rem 2rem;
+            border-radius: 10px;
+            font-size: $font-base;
+          }
+    }
+    
+}   
+
+/*Seccion conocé el estudio*/
+.carouselimg {
+    height: 100%;
+    height: 70%; 
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 768px) {
+    .H2T{
+        font-size: $font-btn-lg;
+    }
+    .carousel-inner{
+        height: auto;
+    }
+  }
+  /*Sección reseñas*/
+.Reseñas{
+    p{
+        color: $color-marron-oscuro;
+    }
+    h2{
+        color: $color-verde-opaco;
+    }
+    h3{
+        color: $color-marron-medio;
+        font-size: $font-base;
+    }
+} 
+@media screen and (max-width: 768px) {
+    .Reseñas{
+        .H2T{
+            font-size: $font-btn-lg;
+        }
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+  }

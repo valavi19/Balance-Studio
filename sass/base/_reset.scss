@@ -1,0 +1,38 @@
+/*Reset*/
+@import"../abstract/variables";
+
+*{
+    font-family: $font-principal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*Estilos Generales*/
+/*Clase para los H1*/
+.H1t{
+    color: $color-beige;
+    font-family: $font-secundaria;
+    font-size: $font-h1;
+    font-weight: 600;
+    font-weight: 700;
+}
+/*Clase para los H2*/
+.H2T{
+    color:$color-beige;
+    font-family: $font-secundaria;
+    font-size: $font-h2;
+    font-weight: 700;
+}
+h3{
+    color:$color-beige;
+    font-family: $font-secundaria;
+    font-size: $font-h3;
+    font-weight: 700;
+}
+h4{
+    color: $color-beige;
+    font-size: $font-h4;
+    font-weight: 500;
+}

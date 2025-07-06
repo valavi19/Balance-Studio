@@ -1,7 +1,7 @@
 /*Importancion de fuentes*/
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Syne:wght@400..800&display=swap');
-/*Selector universal*/
+/*Reset*/
 *{
     font-family: "Inter", serif;
     box-sizing: border-box;
@@ -10,6 +10,7 @@
     list-style: none;
     text-decoration: none;
 }
+/*Estilos Generales*/
 /*Clase para los H1*/
 .H1t{
     color:#F2D8A7 ;
@@ -299,7 +300,8 @@ h4{
       }
       .btn-primary:hover{
         background-color: #6c511f;
-        color: #F2D8A7;}
+        color: #F2D8A7;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -525,7 +527,7 @@ h4{
         opacity: 70%;
     }
     .SeccionIzqPilates{
-        background-image: url(../assets/IMG/Pilates\ -\ Clases.png);
+        background-image: url(../assets/IMG/PilatesClases.png);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -533,7 +535,7 @@ h4{
         padding-top: 23rem;
     }
     .SeccionDrchaYoga{
-        background-image: url(../assets/IMG/Yoga\ -clases.png);
+        background-image: url(../assets/IMG/Yogaclases.png);
         background-size: cover;
         background-position: center;
         height: 100%;

@@ -1,0 +1,70 @@
+//variables
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+/*Página Clases*/
+.seccionClases{
+    .H1t,.H2T{
+        @include titulo ($color: $color-beige, $font: $font-secundaria, $size: $font-clases, $weight: 700);
+    }
+    span{
+        @include titulo ($color: $color-beige, $font: $font-secundaria, $size: $font-clases, $weight: 700);
+        opacity: 70%;
+    }
+    .SeccionIzqPilates{
+        height: 100%;
+        height: 100vh;
+        padding-top: 20rem;
+        @include bg-cover-custom('../assets/IMG/PilatesClases.png', $size: cover, $position: center);
+    }
+    .SeccionDrchaYoga{
+        height: 100%;
+        height: 100vh;
+        padding-top: 20rem;
+        @include bg-cover-custom('../assets/IMG/Yogaclases.png', $size: cover, $position: center);
+    }
+    a{
+        @include boton($bg: $color-beige, $color: $color-marron-profundo);
+    }
+    .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+}
+@media screen and (max-width: 768px){
+    .seccionClases{
+        .H1t,.H2T{
+            font-size: $font-h1;
+        }
+        span{
+            font-size: $font-btn-lg;
+        }
+        .SeccionIzqPilates{
+            height: 100%;
+            height: 50vh;
+            padding-top: 10rem;
+        }
+        .SeccionDrchaYoga{
+            height: 100%;
+            height: 50vh;
+            padding-top: 10rem;
+        }
+        a{
+            @include boton($bg: $color-beige, $color: $color-marron-profundo);
+        }
+        .btn-primary:hover{
+            @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+    }
+}
+@media screen and (max-width: 480px){
+    .seccionClases{
+        .SeccionIzqPilates{
+            padding-top: 5rem;
+        }
+        .SeccionDrchaYoga{
+            padding-top: 5rem;
+                }
+             }
+        }
+    }
+}
+

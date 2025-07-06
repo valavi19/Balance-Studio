@@ -1,0 +1,76 @@
+// Botón estándar
+@mixin boton($bg: $color-beige, $color: $color-marron-profundo) {
+  background-color: $bg;
+  color: $color;
+  font-size: $font-base;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+// Botón hover
+@mixin boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige) {
+  &:hover {
+    background-color: $bg-hover;
+    color: $color-hover;
+  }
+}
+
+// Botón secundario (invertido)
+@mixin boton-secundario($bg: $color-marron-claro, $color: $color-beige) {
+  background-color: $bg;
+  color: $color;
+}
+
+// Mixin para títulos
+@mixin titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h1, $weight: 700) {
+  color: $color;
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+// Centrado con flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Imagen de fondo
+@mixin bg-cover($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
+@mixin bg-cover-custom($url, $size: cover, $position: center) {
+  background-image: url(#{$url});
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin bg-cover-movil ($url) {
+  background-image: url($url);
+  background-position: center;
+  text-align: center;
+}
+
+// Estilo tabla
+@mixin tabla-encabezado {
+  background-color: $color-marron-medio;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin tabla-cuerpo {
+  color: $color-marron-oscuro;
+
+  &:hover {
+    background-color: $color-marron-medio;
+    opacity: 0.8;
+    color: white;
+  }
+}
