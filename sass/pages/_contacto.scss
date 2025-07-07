@@ -1,0 +1,60 @@
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+//Página Contacto
+.SeccionPrincipalContacto{
+    @include bg-cover-custom('../assets/IMG/CONTACTO.png', $size: cover, $position: center bottom);
+    @include seccion ($height: 62vh, $padding: 22rem 2rem 0rem 2rem);
+    .H1t{
+        color: #F2D8A7;
+        font-size: 3rem;
+    }
+}
+.SeccionC,.seccionM{
+    height: 100%;
+    height: 50vh;
+    margin: 3rem 0rem 10rem 0rem;
+    .H2T{
+        color:#8e7850;
+        font-size: 2rem;
+    }
+    .form-label{
+        color: $color-marron-medio;
+    }
+    .form-control{
+        color: $color-marron-medio;
+    }
+    .btn-secondary{
+        background-color: $color-beige;
+        color: $color-marron-claro;
+    }
+    .btn-primary{
+        background-color: $color-marron-claro;
+        color: $color-total-white;
+    }
+    .btn-primary:hover{
+       @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+    }
+}
+@media screen and (max-width: 768px){
+    .SeccionPrincipalContacto{
+        padding: 10rem 3rem 0rem 3rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .SeccionPrincipalContacto{
+        background-size: cover;
+        padding: 8rem 2rem 0.5rem 2rem;
+        height: 50%;
+        background-image: url(../assets/IMG/CONTACTOMQ.png);
+        text-align: start;
+        .H1t{
+            font-size: $font-h2-movil;
+        }
+    }
+    .SeccionC,.seccionM{
+        margin-top: 1rem;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+}

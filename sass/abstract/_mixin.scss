@@ -57,10 +57,10 @@
 }
 
 // Estilo tabla
-@mixin tabla-encabezado {
-  background-color: $color-marron-medio;
+@mixin tabla ($color: $color-marron-medio, $weight:700){
+  background-color: $color;
   color: white;
-  font-weight: 700;
+  font-weight: $weight;
   text-transform: uppercase;
   text-align: center;
 }
@@ -73,4 +73,30 @@
     opacity: 0.8;
     color: white;
   }
+}
+
+//Collapse
+@mixin collapse {
+    position: absolute;
+    bottom: 100%; /* Lo coloca arriba del botón */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    z-index: 1000; /* Asegura que esté por encima */
+    width: 100%;
+}
+
+//Sección pilates
+@mixin seccionPilates {
+    height: 100%;
+    height: 100vh;
+    text-align: start;
+    padding: 36rem 3rem 10rem 3rem;
+}
+
+//seccionprincipal
+@mixin seccion ($height: 62vh, $padding: 22rem 2rem 0rem 2rem){
+    height: 100%;
+    height: $height;
+    text-align: start;
+    padding: $padding;
 }

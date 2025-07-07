@@ -553,3 +553,441 @@ h4 {
     padding-top: 5rem;
   }
 }
+.seccionPilates .H2T {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+.seccionPilates p {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 90%;
+}
+.seccionPilates a {
+  background-color: #F2D8A7;
+  color: #734E40;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+.seccionPilates .seccionPilatesR {
+  background-image: url(../assets/IMG/Reformer.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  text-align: start;
+  padding: 32rem 3rem 10rem 3rem;
+}
+.seccionPilates .seccionPilatesR .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionPilates .seccionPilatesR .collapse-up {
+  position: absolute;
+  bottom: 100%; /* Lo coloca arriba del botón */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 1000; /* Asegura que esté por encima */
+  width: 100%;
+}
+.seccionPilates .seccionPilatesM {
+  background-image: url(../assets/IMG/Matt.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  text-align: start;
+  padding: 36rem 3rem 10rem 3rem;
+}
+.seccionPilates .seccionPilatesM .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionPilates .seccionPilatesM .collapse-up {
+  position: absolute;
+  bottom: 100%; /* Lo coloca arriba del botón */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 1000; /* Asegura que esté por encima */
+  width: 100%;
+}
+.seccionPilates .seccionPilatesS {
+  background-image: url(../assets/IMG/Stott.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  text-align: start;
+  padding: 36rem 3rem 10rem 3rem;
+}
+.seccionPilates .seccionPilatesS .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionPilates .seccionPilatesS .collapse-up {
+  position: absolute;
+  bottom: 100%; /* Lo coloca arriba del botón */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 1000; /* Asegura que esté por encima */
+  width: 100%;
+}
+
+.videosP h3 {
+  color: #8e7850;
+  font-family: "Syne", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.videosP h4 {
+  color: #8e7850;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .seccionPilates .seccionPilatesR {
+    height: 64vh;
+    padding-top: 15rem;
+  }
+  .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
+    height: 50vh;
+    padding-top: 15rem;
+  }
+  .videosP h3 {
+    font-size: 2rem;
+  }
+  .videosP h4 {
+    font-size: 2rem;
+    padding-top: 0rem;
+  }
+  .videosP iframe {
+    margin-bottom: 0rem;
+    align-items: center;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccionPilates .seccionPilatesR {
+    height: 100%;
+    height: 50vh;
+    padding-top: 6rem;
+  }
+  .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
+    height: 100%;
+    height: 33vh;
+    padding-top: 3rem;
+  }
+  .seccionPilates .seccionPilatesM .img, .seccionPilates .seccionPilatesS .img {
+    object-position: bottom;
+  }
+  .collapse-up {
+    display: none;
+  }
+  .videosP h3 {
+    font-size: 2rem;
+  }
+  .videosP h4 {
+    font-size: 2rem;
+  }
+  .videosP iframe {
+    margin-bottom: 0rem;
+    align-items: center;
+    margin-left: 0rem;
+  }
+}
+.seccionY .H1t {
+  color: #F2D8A7;
+  font-size: 3rem;
+}
+.seccionY .H2T {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+.seccionY p {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 90%;
+}
+.seccionY a {
+  background-color: #F2D8A7;
+  color: #734E40;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+.seccionY .seccionYogaA {
+  background-image: url(../assets/IMG/YogaAshtanga1.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  padding: 32rem 3rem 10rem 3rem;
+}
+.seccionY .seccionYogaA .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionY .seccionYogaA .btn-primary:hover .collapse-up {
+  position: absolute;
+  bottom: 100%; /* Lo coloca arriba del botón */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 1000; /* Asegura que esté por encima */
+  width: 100%;
+}
+.seccionY .seccionYogaA .seccionYogaV {
+  background-image: url(../assets/IMG/YogaVinsaya.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  text-align: start;
+  padding: 36rem 3rem 10rem 3rem;
+}
+.seccionY .seccionYogaA .seccionYogaV .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionY .seccionYogaA .seccionYogaV .collapse-up {
+  position: absolute;
+  bottom: 100%; /* Lo coloca arriba del botón */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 1000; /* Asegura que esté por encima */
+  width: 100%;
+}
+.seccionY .seccionYogaA .seccionYogaR {
+  background-image: url(../assets/IMG/Restaurativo.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  height: 100vh;
+  text-align: start;
+  padding: 36rem 3rem 10rem 3rem;
+}
+.seccionY .seccionYogaA .seccionYogaR .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionY .seccionYogaA .seccionYogaR .collapse-up {
+  position: absolute;
+  bottom: 100%; /* Lo coloca arriba del botón */
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 1000; /* Asegura que esté por encima */
+  width: 100%;
+}
+.seccionY .videosY h3 {
+  color: #8e7850;
+  font-family: "Syne", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.seccionY .videosY h4 {
+  color: #8e7850;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .seccionY .seccionYogaA {
+    height: 64vh;
+    padding-top: 15rem;
+  }
+  .seccionY .seccionYogaV, .seccionY .seccionYogaR {
+    height: 50vh;
+    padding-top: 15rem;
+  }
+  .videosY h3 {
+    font-size: 2rem;
+  }
+  .videosY h4 {
+    font-size: 2rem;
+    padding-top: 0rem;
+  }
+  .videosY iframe {
+    margin-bottom: 0rem;
+    align-items: center;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccionY .seccionYogaA {
+    height: 100%;
+    height: 50vh;
+    padding-top: 6rem;
+  }
+  .seccionY .seccionYogaV, .seccionY .seccionYogaR {
+    height: 100%;
+    height: 33vh;
+    padding-top: 3rem;
+  }
+  .collapse-up {
+    display: none;
+  }
+  .videosY h3 {
+    font-size: 2rem;
+  }
+  .videosY h4 {
+    font-size: 2rem;
+  }
+  .videosY iframe {
+    margin-bottom: 0rem;
+    align-items: center;
+    margin-left: 0rem;
+  }
+}
+.seccionPrincipalHorarios {
+  background-image: url(../assets/IMG/HORARIOSo.png);
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 20rem 10rem 10rem 10rem;
+}
+.seccionPrincipalHorarios .H1t {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.seccionPrincipalHorarios a {
+  background-color: #F2D8A7;
+  color: #734E40;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+.seccionPrincipalHorarios .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+
+.horariosP .H2T, .horariosY .H2T {
+  color: #8e7850;
+  font-family: "Syne", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.horariosP .tablahP, .horariosY .tablahP {
+  font-family: "Inter", serif;
+}
+.horariosP .tablahP thead th, .horariosY .tablahP thead th {
+  background-color: #6c511f;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.horariosP .tablahP tbody td, .horariosY .tablahP tbody td {
+  color: #6c511f;
+}
+.horariosP .tablahP tbody td:hover, .horariosY .tablahP tbody td:hover {
+  background-color: #8e7850;
+  opacity: 0.8;
+  color: white;
+}
+.horariosP .tablahP tbody th, .horariosY .tablahP tbody th {
+  background-color: #8e7850;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .seccionPrincipalHorarios {
+    padding: 20rem 3rem 0rem 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccionPrincipalHorarios {
+    padding: 15rem 3rem 0rem 3rem;
+  }
+}
+.SeccionPrincipalContacto {
+  background-image: url(../assets/IMG/CONTACTO.png);
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  height: 62vh;
+  text-align: start;
+  padding: 22rem 2rem 0rem 2rem;
+}
+.SeccionPrincipalContacto .H1t {
+  color: #F2D8A7;
+  font-size: 3rem;
+}
+
+.SeccionC, .seccionM {
+  height: 100%;
+  height: 50vh;
+  margin: 3rem 0rem 10rem 0rem;
+}
+.SeccionC .H2T, .seccionM .H2T {
+  color: #8e7850;
+  font-size: 2rem;
+}
+.SeccionC .form-label, .seccionM .form-label {
+  color: #8e7850;
+}
+.SeccionC .form-control, .seccionM .form-control {
+  color: #8e7850;
+}
+.SeccionC .btn-secondary, .seccionM .btn-secondary {
+  background-color: #F2D8A7;
+  color: #a67d32;
+}
+.SeccionC .btn-primary, .seccionM .btn-primary {
+  background-color: #a67d32;
+  color: #ffffff;
+}
+.SeccionC .btn-primary:hover:hover, .seccionM .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+
+@media screen and (max-width: 768px) {
+  .SeccionPrincipalContacto {
+    padding: 10rem 3rem 0rem 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .SeccionPrincipalContacto {
+    background-size: cover;
+    padding: 8rem 2rem 0.5rem 2rem;
+    height: 50%;
+    background-image: url(../assets/IMG/CONTACTOMQ.png);
+    text-align: start;
+  }
+  .SeccionPrincipalContacto .H1t {
+    font-size: 1.5rem;
+  }
+  .SeccionC, .seccionM {
+    margin-top: 1rem;
+    padding: 1rem 1rem 3rem 1rem;
+  }
+}

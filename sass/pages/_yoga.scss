@@ -1,0 +1,119 @@
+//variables
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+.seccionY{
+    .H1t{
+        color: #F2D8A7;
+        font-size: 3rem;
+    }
+    .H2T{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h3, $weight: 700);
+        opacity: 90%;
+    }
+    p{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-base, $weight: 400);
+        opacity: 90%;
+    }
+    a{
+        @include boton($bg: $color-beige, $color: $color-marron-profundo)
+    }
+    .seccionYogaA{
+        @include bg-cover-custom('../assets/IMG/YogaAshtanga1.png', $size: cover, $position: center);
+        height: 100%;
+        height: 100vh;
+        padding: 32rem 3rem 10rem 3rem;
+        .btn-primary:hover{
+            @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+        .collapse-up {
+            @include collapse;
+            }    
+    }
+    .seccionYogaV{
+        @include bg-cover-custom('../assets/IMG/YogaVinsaya.png', $size: cover, $position: center);
+        @include seccionPilates;
+        .btn-primary:hover{
+           @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+         }
+        .collapse-up {
+            @include collapse;
+            }    
+    }
+    .seccionYogaR{
+        @include bg-cover-custom('../assets/IMG/Restaurativo.png', $size: cover, $position: center);
+        @include seccionPilates;
+        .btn-primary:hover{
+             @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+            }
+        .collapse-up {
+           @include collapse;
+        }    
+    }
+}
+.videosY{
+    h3{
+        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h1, $weight: 700);
+    }
+    h4{
+        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h4, $weight: 700);
+        opacity: 90%;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionY{
+        .seccionYogaA{
+            height: 64vh;
+            padding-top: 15rem;
+        }
+        .seccionYogaV,.seccionYogaR{
+            height: 50vh;
+            padding-top: 15rem;
+       }
+    }
+    .videosY{
+        h3{
+            font-size: $font-h3;
+        }
+        h4{
+            font-size: $font-h4;
+            padding-top: 0rem;
+        }
+        iframe{
+            margin-bottom: 0rem;
+            align-items: center;
+            margin-left: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .seccionY{
+        .seccionYogaA{
+            height: 100%;
+            height: 50vh;
+            padding-top: 6rem;
+        }
+        .seccionYogaV,.seccionYogaR{
+            height: 100%;
+            height: 33vh;
+            padding-top: 3rem;
+       }
+    }
+    .collapse-up{
+        display: none;
+    }
+    .videosY{
+        h3{
+            font-size: $font-h3;
+        }
+        h4{
+            font-size: $font-h4;
+        }
+        iframe{
+            margin-bottom: 0rem;
+            align-items: center;
+            margin-left: 0rem;
+        }
+    }
+}
