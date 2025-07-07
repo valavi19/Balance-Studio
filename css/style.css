@@ -513,24 +513,25 @@ h4 {
   background-color: #6c511f;
   color: #F2D8A7;
 }
+
 @media screen and (max-width: 768px) {
-  .seccionClases .seccionClases .H1t, .seccionClases .seccionClases .H2T {
+  .seccionClases .H1t, .seccionClases .H2T {
     font-size: 3rem;
   }
-  .seccionClases .seccionClases span {
+  .seccionClases span {
     font-size: 2rem;
   }
-  .seccionClases .seccionClases .SeccionIzqPilates {
+  .seccionClases .SeccionIzqPilates {
     height: 100%;
     height: 50vh;
     padding-top: 10rem;
   }
-  .seccionClases .seccionClases .SeccionDrchaYoga {
+  .seccionClases .SeccionDrchaYoga {
     height: 100%;
     height: 50vh;
     padding-top: 10rem;
   }
-  .seccionClases .seccionClases a {
+  .seccionClases a {
     background-color: #F2D8A7;
     color: #734E40;
     font-size: 1rem;
@@ -539,16 +540,16 @@ h4 {
     text-decoration: none;
     border: none;
   }
-  .seccionClases .seccionClases .btn-primary:hover:hover {
+  .seccionClases .btn-primary:hover:hover {
     background-color: #6c511f;
     color: #F2D8A7;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 480px) {
-  .seccionClases .seccionClases .SeccionIzqPilates {
+@media screen and (max-width: 480px) {
+  .seccionClases .SeccionIzqPilates {
     padding-top: 5rem;
   }
-  .seccionClases .seccionClases .SeccionDrchaYoga {
+  .seccionClases .SeccionDrchaYoga {
     padding-top: 5rem;
   }
 }

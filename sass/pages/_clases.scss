@@ -30,6 +30,7 @@
     .btn-primary:hover{
         @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
 }
+}
 @media screen and (max-width: 768px){
     .seccionClases{
         .H1t,.H2T{
@@ -53,6 +54,7 @@
         }
         .btn-primary:hover{
             @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+        }
     }
 }
 @media screen and (max-width: 480px){
@@ -62,8 +64,6 @@
         }
         .SeccionDrchaYoga{
             padding-top: 5rem;
-                }
-             }
         }
     }
 }
