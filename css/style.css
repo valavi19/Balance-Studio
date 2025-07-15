@@ -553,12 +553,19 @@ h4 {
     padding-top: 5rem;
   }
 }
-.seccionPilates .H2T {
+.seccionPilates .reformerB .H2T {
   color: #F2D8A7;
   font-family: "Syne", serif;
   font-size: 2rem;
   font-weight: 700;
   opacity: 90%;
+}
+.seccionPilates .reformerB .H2T .fa-solid {
+  padding-left: 20rem;
+}
+.seccionPilates .reformerB .fa-chevron-up {
+  color: #F2D8A7;
+  font-size: 2rem;
 }
 .seccionPilates p {
   color: #F2D8A7;

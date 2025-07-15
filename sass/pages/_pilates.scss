@@ -5,10 +5,16 @@
 
 //Pagina pilates
 .seccionPilates{
-    .H2T{
-        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
-        opacity: 90%;
-    }
+    .reformerB{
+        .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-btn-lg;
+            }
+        }
     p{
         @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-base, $weight: 400);
         opacity: 90%;
@@ -20,7 +26,7 @@
         @include bg-cover-custom('../assets/IMG/Reformer.png', $size: cover, $position: center);
         height: 100%;
         height: 100vh;
-        text-align: start;
+        text-align: start; 
         padding: 32rem 3rem 10rem 3rem;
         .btn-primary:hover{
             @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);

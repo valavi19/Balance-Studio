@@ -34,8 +34,8 @@
 // Centrado con flex
 @mixin flex-center {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 
 // Imagen de fondo
