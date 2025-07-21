@@ -4,7 +4,7 @@
 
 //Página Contacto
 .SeccionPrincipalContacto{
-    @include bg-cover-custom('../assets/IMG/CONTACTO.png', $size: cover, $position: center bottom);
+    @include bg-cover-custom('../assets/imagenes/CONTACTO.png', $size: cover, $position: center bottom);
     @include seccion ($height: 62vh, $padding: 22rem 2rem 0rem 2rem);
     .H1t{
         color: #F2D8A7;
@@ -47,7 +47,7 @@
         background-size: cover;
         padding: 8rem 2rem 0.5rem 2rem;
         height: 50%;
-        background-image: url(../assets/IMG/CONTACTOMQ.png);
+        background-image: url(../assets/imagenes/CONTACTOMQ.png);
         text-align: start;
         .H1t{
             font-size: $font-h2-movil;

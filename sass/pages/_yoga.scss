@@ -19,19 +19,20 @@
     a{
         @include boton($bg: $color-beige, $color: $color-marron-profundo)
     }
-    .seccionYogaA{
-        @include bg-cover-custom('../assets/IMG/YogaAshtanga1.png', $size: cover, $position: center);
+    .seccionYogaA{  
+        @include bg-cover-custom('../assets/imagenes/yogaAshtanga1.png', $size: cover, $position: center);
         height: 100%;
         height: 100vh;
         padding: 32rem 3rem 10rem 3rem;
         .btn-primary:hover{
-            @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
         .collapse-up {
             @include collapse;
             }    
+        }
     }
     .seccionYogaV{
-        @include bg-cover-custom('../assets/IMG/YogaVinsaya.png', $size: cover, $position: center);
+        @include bg-cover-custom('../assets/imagenes/yogaVinsaya.png', $size: cover, $position: center);
         @include seccionPilates;
         .btn-primary:hover{
            @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
@@ -41,7 +42,7 @@
             }    
     }
     .seccionYogaR{
-        @include bg-cover-custom('../assets/IMG/Restaurativo.png', $size: cover, $position: center);
+        @include bg-cover-custom('../assets/imagenes/restaurativo.png', $size: cover, $position: center);
         @include seccionPilates;
         .btn-primary:hover{
              @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
@@ -60,7 +61,6 @@
         opacity: 90%;
         }
     }
-}
 @media screen and (max-width: 768px){
     .seccionY{
         .seccionYogaA{

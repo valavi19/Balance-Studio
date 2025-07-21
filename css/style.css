@@ -213,7 +213,7 @@ h4 {
 }
 /*Página Inicio*/
 .SeccionPrincipalInicio {
-  background-image: url("../assets/IMG/Imagen INICIO.png");
+  background-image: url("../assets/imagenes/Imagen INICIO.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -241,7 +241,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .SeccionPrincipalInicio {
-    background-image: url("../assets/IMG/ImagenINICIOmovilverde.png");
+    background-image: url("../assets/imagenes/ImagenINICIOmovilverde.png");
     background-position: center;
     text-align: center;
     padding: 25rem 2rem 2rem 2rem;
@@ -285,7 +285,7 @@ h4 {
 }
 /*SeccionClases*/
 .seccionEncuentraP {
-  background-image: url("../assets/IMG/EncuentraP.png");
+  background-image: url("../assets/imagenes/EncuentraP.png");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -308,7 +308,7 @@ h4 {
 }
 
 .seccionEncuentraY {
-  background-image: url("../assets/IMG/EncuentraY.png");
+  background-image: url("../assets/imagenes/EncuentraY.png");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -402,7 +402,7 @@ h4 {
   }
 }
 .secciónPrincipalNosotrosIzq {
-  background-image: url(../assets/IMG/NOSOTROS.png);
+  background-image: url(../assets/imagenes/NOSOTROS.png);
   background-size: cover;
   background-position: center bottom;
   height: 100%;
@@ -558,7 +558,7 @@ h4 {
   height: 100%;
   height: 100vh;
   padding-top: 20rem;
-  background-image: url(../assets/IMG/PilatesClases.png);
+  background-image: url(../assets/imagenes/PilatesClases.png);
   background-size: cover;
   background-position: center;
 }
@@ -566,7 +566,7 @@ h4 {
   height: 100%;
   height: 100vh;
   padding-top: 20rem;
-  background-image: url(../assets/IMG/Yogaclases.png);
+  background-image: url(../assets/imagenes/Yogaclases.png);
   background-size: cover;
   background-position: center;
 }
@@ -586,19 +586,18 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .seccionClases .H1t, .seccionClases .H2T {
+    padding-top: 25rem;
     font-size: 3rem;
   }
   .seccionClases span {
     font-size: 2rem;
   }
   .seccionClases .SeccionIzqPilates {
-    height: 100%;
-    height: 50vh;
+    height: 100vh;
     padding-top: 10rem;
   }
   .seccionClases .SeccionDrchaYoga {
-    height: 100%;
-    height: 50vh;
+    height: 100vh;
     padding-top: 10rem;
   }
   .seccionClases a {
@@ -616,6 +615,10 @@ h4 {
   }
 }
 @media screen and (max-width: 480px) {
+  .seccionClases .H1t, .seccionClases .H2T {
+    padding-top: 20rem;
+    font-size: 3rem;
+  }
   .seccionClases .SeccionIzqPilates {
     padding-top: 5rem;
   }
@@ -651,7 +654,7 @@ h4 {
   border: none;
 }
 .seccionPilates .seccionPilatesR {
-  background-image: url(../assets/IMG/Reformer.png);
+  background-image: url(../assets/imagenes/Reformer.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -672,7 +675,7 @@ h4 {
   width: 100%;
 }
 .seccionPilates .seccionPilatesM {
-  background-image: url(../assets/IMG/Matt.png);
+  background-image: url(../assets/imagenes/Matt.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -693,7 +696,7 @@ h4 {
   width: 100%;
 }
 .seccionPilates .seccionPilatesS {
-  background-image: url(../assets/IMG/Stott.png);
+  background-image: url(../assets/imagenes/Stott.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -730,11 +733,15 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .seccionPilates .seccionPilatesR {
-    background-image: url(../assets/IMG/Reformermovil.png);
+    background-image: url(../assets/imagenes/Reformermovil.png);
     background-size: cover;
     background-position: center;
     height: 64vh;
     padding-top: 15rem;
+  }
+  .seccionPilates .seccionPilatesR .fa-circle-chevron-up {
+    padding-left: 1rem;
+    font-size: 0.5 rem;
   }
   .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
     height: 64vh;
@@ -810,7 +817,7 @@ h4 {
   border: none;
 }
 .seccionY .seccionYogaA {
-  background-image: url(../assets/IMG/YogaAshtanga1.png);
+  background-image: url(../assets/imagenes/yogaAshtanga1.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -829,8 +836,8 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
-.seccionY .seccionYogaA .seccionYogaV {
-  background-image: url(../assets/IMG/YogaVinsaya.png);
+.seccionY .seccionYogaV {
+  background-image: url(../assets/imagenes/yogaVinsaya.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -838,11 +845,11 @@ h4 {
   text-align: start;
   padding: 36rem 3rem 10rem 3rem;
 }
-.seccionY .seccionYogaA .seccionYogaV .btn-primary:hover:hover {
+.seccionY .seccionYogaV .btn-primary:hover:hover {
   background-color: #6c511f;
   color: #F2D8A7;
 }
-.seccionY .seccionYogaA .seccionYogaV .collapse-up {
+.seccionY .seccionYogaV .collapse-up {
   position: absolute;
   bottom: 100%; /* Lo coloca arriba del botón */
   left: 50%;
@@ -850,8 +857,8 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
-.seccionY .seccionYogaA .seccionYogaR {
-  background-image: url(../assets/IMG/Restaurativo.png);
+.seccionY .seccionYogaR {
+  background-image: url(../assets/imagenes/restaurativo.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -859,11 +866,11 @@ h4 {
   text-align: start;
   padding: 36rem 3rem 10rem 3rem;
 }
-.seccionY .seccionYogaA .seccionYogaR .btn-primary:hover:hover {
+.seccionY .seccionYogaR .btn-primary:hover:hover {
   background-color: #6c511f;
   color: #F2D8A7;
 }
-.seccionY .seccionYogaA .seccionYogaR .collapse-up {
+.seccionY .seccionYogaR .collapse-up {
   position: absolute;
   bottom: 100%; /* Lo coloca arriba del botón */
   left: 50%;
@@ -871,13 +878,14 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
-.seccionY .videosY h3 {
+
+.videosY h3 {
   color: #8e7850;
   font-family: "Syne", serif;
   font-size: 3rem;
   font-weight: 700;
 }
-.seccionY .videosY h4 {
+.videosY h4 {
   color: #8e7850;
   font-family: "Syne", serif;
   font-size: 2rem;
@@ -934,7 +942,7 @@ h4 {
   }
 }
 .seccionPrincipalHorarios {
-  background-image: url(../assets/IMG/HORARIOSo.png);
+  background-image: url(../assets/imagenes/HORARIOSo.png);
   background-size: cover;
   background-position: center bottom;
   height: 100%;
@@ -1006,7 +1014,7 @@ h4 {
   }
 }
 .SeccionPrincipalContacto {
-  background-image: url(../assets/IMG/CONTACTO.png);
+  background-image: url(../assets/imagenes/CONTACTO.png);
   background-size: cover;
   background-position: center bottom;
   height: 100%;
@@ -1057,7 +1065,7 @@ h4 {
     background-size: cover;
     padding: 8rem 2rem 0.5rem 2rem;
     height: 50%;
-    background-image: url(../assets/IMG/CONTACTOMQ.png);
+    background-image: url(../assets/imagenes/CONTACTOMQ.png);
     text-align: start;
   }
   .SeccionPrincipalContacto .H1t {

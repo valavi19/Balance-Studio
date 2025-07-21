@@ -23,7 +23,7 @@
         @include boton($bg: $color-beige, $color: $color-marron-profundo);
     }
     .seccionPilatesR{
-        @include bg-cover-custom('../assets/IMG/Reformer.png', $size: cover, $position: center);
+        @include bg-cover-custom('../assets/imagenes/Reformer.png', $size: cover, $position: center);
         height: 100%;
         height: 100vh;
         text-align: start; 
@@ -36,7 +36,7 @@
             }    
 }
 .seccionPilatesM{
-    @include bg-cover-custom('../assets/IMG/Matt.png', $size: cover, $position: center);
+    @include bg-cover-custom('../assets/imagenes/Matt.png', $size: cover, $position: center);
     @include seccionPilates;
     .btn-primary:hover{
         @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
@@ -46,7 +46,7 @@
         }  
 }
 .seccionPilatesS{
-    @include bg-cover-custom("../assets/IMG/Stott.png", $size: cover, $position: center);
+    @include bg-cover-custom("../assets/imagenes/Stott.png", $size: cover, $position: center);
     @include seccionPilates;
     .btn-primary:hover{
         @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);}
@@ -67,9 +67,13 @@
 @media screen and (max-width: 768px){
     .seccionPilates{
         .seccionPilatesR{
-            @include bg-cover-custom("../assets/IMG/Reformermovil.png", $size: cover, $position: center);
+            @include bg-cover-custom("../assets/imagenes/Reformermovil.png", $size: cover, $position: center);
             height: 64vh;
             padding-top: 15rem;
+            .fa-circle-chevron-up{
+            padding-left: 1rem;
+            font-size: 0.5 rem;
+            }
         }
        .seccionPilatesM,.seccionPilatesS{
             height: 64vh;
