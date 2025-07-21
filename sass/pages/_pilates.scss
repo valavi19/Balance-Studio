@@ -67,18 +67,32 @@
 @media screen and (max-width: 768px){
     .seccionPilates{
         .seccionPilatesR{
-            @include bg-cover-custom("../assets/imagenes/Reformermovil.png", $size: cover, $position: center);
-            height: 64vh;
+            @include bg-cover-custom("../assets/imagenes/reformermovil.png", $size: cover, $position: center);
+            height: 100vh;
             padding-top: 15rem;
             .fa-circle-chevron-up{
             padding-left: 1rem;
             font-size: 0.5 rem;
             }
         }
-       .seccionPilatesM,.seccionPilatesS{
-            height: 64vh;
-            padding-top: 15rem;
-       }
+        .seccionPilatesM{
+            @include bg-cover-custom("../assets/imagenes/restaurativomovil.png", $size: cover, $position: center);
+            height: 100vh;
+            padding-top: 30rem;
+            .fa-circle-chevron-up{
+            padding-left: 1rem;
+            font-size: 0.5 rem;
+            }
+        }
+         .seccionPilatesS{
+            @include bg-cover-custom("../assets/imagenes/stottmovil.png", $size: cover, $position: center);
+            height: 100vh;
+            padding-top: 30rem;
+            .fa-circle-chevron-up{
+            padding-left: 1rem;
+            font-size: 0.5 rem;
+            }
+        }
     }
     .videosP{
         h3{

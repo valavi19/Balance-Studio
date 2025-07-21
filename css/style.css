@@ -733,19 +733,37 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .seccionPilates .seccionPilatesR {
-    background-image: url(../assets/imagenes/Reformermovil.png);
+    background-image: url(../assets/imagenes/reformermovil.png);
     background-size: cover;
     background-position: center;
-    height: 64vh;
+    height: 100vh;
     padding-top: 15rem;
   }
   .seccionPilates .seccionPilatesR .fa-circle-chevron-up {
     padding-left: 1rem;
     font-size: 0.5 rem;
   }
-  .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
-    height: 64vh;
-    padding-top: 15rem;
+  .seccionPilates .seccionPilatesM {
+    background-image: url(../assets/imagenes/restaurativomovil.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 30rem;
+  }
+  .seccionPilates .seccionPilatesM .fa-circle-chevron-up {
+    padding-left: 1rem;
+    font-size: 0.5 rem;
+  }
+  .seccionPilates .seccionPilatesS {
+    background-image: url(../assets/imagenes/stottmovil.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 30rem;
+  }
+  .seccionPilates .seccionPilatesS .fa-circle-chevron-up {
+    padding-left: 1rem;
+    font-size: 0.5 rem;
   }
   .videosP h3 {
     font-size: 2rem;
