@@ -63,14 +63,11 @@
     }
 @media screen and (max-width: 768px){
     .seccionY{
-        .seccionYogaA{
-            height: 64vh;
+        .seccionYogaA.seccionYogaV,.seccionYogaR{
+            height: 100%;
+            height: 100vh;
             padding-top: 15rem;
         }
-        .seccionYogaV,.seccionYogaR{
-            height: 50vh;
-            padding-top: 15rem;
-       }
     }
     .videosY{
         h3{
