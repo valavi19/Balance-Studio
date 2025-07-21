@@ -115,8 +115,14 @@
     width: 100%;
     background-color: $color-marron-claro;
     color: $color-beige;
+    img{
+        padding-left: 3rem;
+    }
     a,h4,li{
         color:$color-beige
+    }
+    .lista{
+        padding-left: 2rem;
     }
     .list-group .list-group-item:hover{
         color:$color-marron-vino;
@@ -135,12 +141,11 @@
 }
 @media (max-width: 768px) {
     .Footerbg{
-        img{
-            padding-left: 2rem;
-        }
         h4{
             padding-top: 2rem;
-            padding-left: 3rem;
+        }
+        .lista{
+            padding-left: 0.5rem ;
         }
     }
     .linkredes{
@@ -148,14 +153,41 @@
             margin-left: 0rem;
         }
         a{
-            font-size: 3rem;
+            font-size: 2rem;
             align-items: center;
         }
         .mail{
-            margin-left: 3rem;
+            margin-left: 2rem;
         }
     }
 }
+@media (max-width: 480px) {
+    .Footerbg{
+        img{
+            padding-left: 2rem;
+        }
+        h4{
+            padding-top: 2rem;
+        }
+        .lista{
+            padding-left: 3rem;
+        }
+    }
+    .linkredes{
+        h4{
+            margin-left: 4rem;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        a{
+            align-items: end;
+        }
+         .mail{
+            margin-left: 1rem;
+        }
+    }
+}
+
 /*Página Inicio*/
 .SeccionPrincipalInicio{
    @include bg-cover('../assets/IMG/Imagen INICIO.png');
@@ -167,7 +199,8 @@
             color: $color-beige;
         }
         a{
-            @include boton ($bg: $color-beige, $color: $color-marron-profundo)
+            @include boton ($bg: $color-beige, $color: $color-marron-profundo);
+            padding: 1rem;
         }
         .btn-primary:hover{
             @include boton-hover ($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
@@ -177,13 +210,13 @@
 @media screen and (max-width: 768px) {
     .SeccionPrincipalInicio{
         @include bg-cover-movil ('../assets/IMG/ImagenINICIOmovilverde.png');
-        padding: 32rem 2rem 2rem 2rem;
+        padding: 25rem 2rem 2rem 2rem;
         height: 100vh;
 
             a{
-                font-size: $font-base;
-                padding:1rem 1rem 1rem 1rem;
-                margin-top: 1rem;
+                @include bt-custom;
+                margin-left:5rem;
+                margin-top: 2rem;
             }
             .H1t{
                 font-size:$font-btn-lg;
@@ -197,6 +230,18 @@
 @media screen and (max-width: 480px){
     .SeccionPrincipalInicio{
         padding: 23rem 2rem 2rem 2rem;
+         a{
+                font-size: $font-base;
+                padding:1rem 1rem 1rem 1rem;
+                margin-top: 1rem;
+                margin-left: 0rem;
+            }
+            .H1t{
+                font-size:$font-btn-lg;
+            }
+            p{
+                display: none;
+            }
     }
 }
 /*SeccionClases*/
@@ -238,19 +283,24 @@
         height: 100%;
         height: 50vh;
         text-align: end;
-        padding-top: 13rem;
+        padding-top: 20rem;
         .H2T{
             font-size: $font-btn-lg;
+            margin-right: 1rem;
         }
         a{
             margin-top:0.5rem;
-            padding:0.5rem 2rem 0.5rem 2rem;
+            padding:0.5rem 1rem 0.5rem 1rem;
             border-radius: 10px;
-            font-size: $font-base;
           }
     }
     
 }   
+@media screen and (max-width: 480px){
+    .seccionEncuentraP,.seccionEncuentraY{
+        padding-top: 13rem;
+    }
+}
 
 /*Seccion conocé el estudio*/
 .carouselimg {
@@ -281,6 +331,15 @@
     }
 } 
 @media screen and (max-width: 768px) {
+    .Reseñas{
+        .H2T{
+            font-size: $font-btn-lg;
+        }
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+  }
+@media screen and (max-width: 480px) {
     .Reseñas{
         .H2T{
             font-size: $font-btn-lg;

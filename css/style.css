@@ -149,8 +149,14 @@ h4 {
   background-color: #a67d32;
   color: #F2D8A7;
 }
+.Footerbg img {
+  padding-left: 3rem;
+}
 .Footerbg a, .Footerbg h4, .Footerbg li {
   color: #F2D8A7;
+}
+.Footerbg .lista {
+  padding-left: 2rem;
 }
 .Footerbg .list-group .list-group-item:hover {
   color: #523d15;
@@ -166,22 +172,43 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  .Footerbg img {
-    padding-left: 2rem;
-  }
   .Footerbg h4 {
     padding-top: 2rem;
-    padding-left: 3rem;
+  }
+  .Footerbg .lista {
+    padding-left: 0.5rem;
   }
   .linkredes h4 {
     margin-left: 0rem;
   }
   .linkredes a {
-    font-size: 3rem;
+    font-size: 2rem;
     align-items: center;
   }
   .linkredes .mail {
-    margin-left: 3rem;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .Footerbg img {
+    padding-left: 2rem;
+  }
+  .Footerbg h4 {
+    padding-top: 2rem;
+  }
+  .Footerbg .lista {
+    padding-left: 3rem;
+  }
+  .linkredes h4 {
+    margin-left: 4rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .linkredes a {
+    align-items: end;
+  }
+  .linkredes .mail {
+    margin-left: 1rem;
   }
 }
 /*Página Inicio*/
@@ -205,6 +232,7 @@ h4 {
   text-align: center;
   text-decoration: none;
   border: none;
+  padding: 1rem;
 }
 .SeccionPrincipalInicio .btn-primary:hover:hover {
   background-color: #6c511f;
@@ -216,13 +244,20 @@ h4 {
     background-image: url("../assets/IMG/ImagenINICIOmovilverde.png");
     background-position: center;
     text-align: center;
-    padding: 32rem 2rem 2rem 2rem;
+    padding: 25rem 2rem 2rem 2rem;
     height: 100vh;
   }
   .SeccionPrincipalInicio a {
     font-size: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    margin-top: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: #F2D8A7;
+    color: #734E40;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5rem;
+    margin-top: 2rem;
   }
   .SeccionPrincipalInicio .H1t {
     font-size: 2rem;
@@ -234,6 +269,18 @@ h4 {
 @media screen and (max-width: 480px) {
   .SeccionPrincipalInicio {
     padding: 23rem 2rem 2rem 2rem;
+  }
+  .SeccionPrincipalInicio a {
+    font-size: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+  .SeccionPrincipalInicio .H1t {
+    font-size: 2rem;
+  }
+  .SeccionPrincipalInicio p {
+    display: none;
   }
 }
 /*SeccionClases*/
@@ -292,16 +339,21 @@ h4 {
     height: 100%;
     height: 50vh;
     text-align: end;
-    padding-top: 13rem;
+    padding-top: 20rem;
   }
   .seccionEncuentraP .H2T, .seccionEncuentraY .H2T {
     font-size: 2rem;
+    margin-right: 1rem;
   }
   .seccionEncuentraP a, .seccionEncuentraY a {
     margin-top: 0.5rem;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 10px;
-    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccionEncuentraP, .seccionEncuentraY {
+    padding-top: 13rem;
   }
 }
 /*Seccion conocé el estudio*/
@@ -332,6 +384,15 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+  .Reseñas {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .Reseñas .H2T {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .Reseñas {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -383,6 +444,15 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+  .secciónPrincipalNosotrosDrcha {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .secciónPrincipalNosotrosDrcha p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
   .secciónPrincipalNosotrosDrcha {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -560,10 +630,7 @@ h4 {
   font-weight: 700;
   opacity: 90%;
 }
-.seccionPilates .reformerB .H2T .fa-solid {
-  padding-left: 20rem;
-}
-.seccionPilates .reformerB .fa-chevron-up {
+.seccionPilates .reformerB .fa-circle-chevron-up {
   color: #F2D8A7;
   font-size: 2rem;
 }
@@ -663,11 +730,14 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .seccionPilates .seccionPilatesR {
+    background-image: url(../assets/IMG/Reformermovil.png);
+    background-size: cover;
+    background-position: center;
     height: 64vh;
     padding-top: 15rem;
   }
   .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
-    height: 50vh;
+    height: 64vh;
     padding-top: 15rem;
   }
   .videosP h3 {
@@ -691,7 +761,7 @@ h4 {
   }
   .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
     height: 100%;
-    height: 33vh;
+    height: 50vh;
     padding-top: 3rem;
   }
   .seccionPilates .seccionPilatesM .img, .seccionPilates .seccionPilatesS .img {

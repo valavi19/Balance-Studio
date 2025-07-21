@@ -43,6 +43,15 @@
         }
     }
 }
+@media screen and (max-width: 480px){
+    .secciónPrincipalNosotrosDrcha{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        p{
+            font-size: $font-base;
+        }
+    }
+}
 //Sección de Instructores
 .colorTituloI{
     color: $color-verde-opaco;

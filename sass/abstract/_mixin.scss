@@ -17,6 +17,18 @@
   }
 }
 
+//Botón custom
+@mixin bt-custom {
+  font-size: $font-base;
+  padding: 1.5rem 2rem;
+  background-color: $color-beige;
+  color: $color-marron-profundo;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
 // Botón secundario (invertido)
 @mixin boton-secundario($bg: $color-marron-claro, $color: $color-beige) {
   background-color: $bg;
