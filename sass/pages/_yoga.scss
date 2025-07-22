@@ -24,11 +24,22 @@
         height: 100%;
         height: 100vh;
         padding: 32rem 3rem 10rem 3rem;
-        .btn-primary:hover{
-        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
         .collapse-up {
             @include collapse;
-            }    
+            }   
+        .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige); 
+        }
+        .ashtangaB{
+            .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 6rem;
+            }
         }
     }
     .seccionYogaV{
@@ -39,7 +50,18 @@
          }
         .collapse-up {
             @include collapse;
-            }    
+            }
+            .vinsayaB{
+            .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 7.8rem;
+            }
+         }  
     }
     .seccionYogaR{
         @include bg-cover-custom('../assets/imagenes/restaurativo.png', $size: cover, $position: center);
@@ -49,68 +71,72 @@
             }
         .collapse-up {
            @include collapse;
-        }    
+        } 
+        .restaurativoB{
+            .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 2.5rem;
+            }
+         }  
     }
 }
-.videosY{
-    h3{
-        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h1, $weight: 700);
-    }
-    h4{
-        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h4, $weight: 700);
-        opacity: 90%;
-        }
-    }
 @media screen and (max-width: 768px){
     .seccionY{
-        .seccionYogaA.seccionYogaV,.seccionYogaR{
+         p{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h3, $weight: 400);
+        opacity: 90%;
+        }
+        .seccionYogaA{
+            @include bg-cover-custom("../assets/imagenes/yogaAshtanga1movil.png", $size: cover, $position: center);
+            height: 90vh;
+            padding-top: 40rem;
+            .fa-circle-chevron-up{
+            display: none;
+            }
+        }
+        .seccionYogaV{
+            @include bg-cover-custom("../assets/imagenes/yogaVinsayamovil.png", $size: cover, $position: center);
             height: 100%;
-            height: 100vh;
-            padding-top: 15rem;
+            height: 80vh;
+            padding-top: 40rem;
+            .fa-circle-chevron-up{
+            display: none;
+            }
         }
-    }
-    .videosY{
-        h3{
-            font-size: $font-h3;
-        }
-        h4{
-            font-size: $font-h4;
-            padding-top: 0rem;
-        }
-        iframe{
-            margin-bottom: 0rem;
-            align-items: center;
-            margin-left: 2rem;
+        .seccionYogaR{
+            @include bg-cover-custom("../assets/imagenes/restaurativomovil.png", $size: cover, $position: center);
+            height: 100%;
+            height: 80vh;
+            padding-top: 40rem;
+            .fa-circle-chevron-up{
+            display: none;
+            }
         }
     }
 }
 @media screen and (max-width: 480px){
     .seccionY{
         .seccionYogaA{
+            .H2T{
+                text-align: start;
+            }
             height: 100%;
-            height: 50vh;
-            padding-top: 6rem;
+            height: 90vh;
+            padding-top: 22rem;
         }
         .seccionYogaV,.seccionYogaR{
             height: 100%;
-            height: 33vh;
-            padding-top: 3rem;
+            height: 80vh;
+            padding-top: 12rem;
        }
-    }
-    .collapse-up{
+       .collapse-up{
         display: none;
-    }
-    .videosY{
-        h3{
-            font-size: $font-h3;
-        }
-        h4{
-            font-size: $font-h4;
-        }
-        iframe{
-            margin-bottom: 0rem;
-            align-items: center;
-            margin-left: 0rem;
         }
     }
+
 }

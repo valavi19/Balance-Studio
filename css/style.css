@@ -636,6 +636,7 @@ h4 {
 .seccionPilates .reformerB .fa-circle-chevron-up {
   color: #F2D8A7;
   font-size: 2rem;
+  padding-left: 4.2rem;
 }
 .seccionPilates p {
   color: #F2D8A7;
@@ -695,6 +696,18 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
+.seccionPilates .seccionPilatesM .stottB .H2T {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+.seccionPilates .seccionPilatesM .stottB .fa-circle-chevron-up {
+  color: #F2D8A7;
+  font-size: 2rem;
+  padding-left: 9.2rem;
+}
 .seccionPilates .seccionPilatesS {
   background-image: url(../assets/imagenes/Stott.png);
   background-size: cover;
@@ -716,95 +729,79 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
-
-.videosP h3 {
-  color: #8e7850;
-  font-family: "Syne", serif;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.videosP h4 {
-  color: #8e7850;
+.seccionPilates .mattB .H2T {
+  color: #F2D8A7;
   font-family: "Syne", serif;
   font-size: 2rem;
   font-weight: 700;
   opacity: 90%;
 }
+.seccionPilates .mattB .fa-circle-chevron-up {
+  color: #F2D8A7;
+  font-size: 2rem;
+  padding-left: 9.2rem;
+}
 
 @media screen and (max-width: 768px) {
+  .seccionPilates p {
+    color: #F2D8A7;
+    font-family: "Syne", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 90%;
+  }
   .seccionPilates .seccionPilatesR {
     background-image: url(../assets/imagenes/reformermovil.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding-top: 15rem;
+    height: 90vh;
+    padding-top: 40rem;
   }
   .seccionPilates .seccionPilatesR .fa-circle-chevron-up {
-    padding-left: 1rem;
-    font-size: 0.5 rem;
+    display: none;
   }
   .seccionPilates .seccionPilatesM {
-    background-image: url(../assets/imagenes/restaurativomovil.png);
+    background-image: url(../assets/imagenes/Mattmovil.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding-top: 30rem;
+    height: 100%;
+    height: 80vh;
+    padding-top: 40rem;
   }
   .seccionPilates .seccionPilatesM .fa-circle-chevron-up {
-    padding-left: 1rem;
-    font-size: 0.5 rem;
+    display: none;
   }
   .seccionPilates .seccionPilatesS {
     background-image: url(../assets/imagenes/stottmovil.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding-top: 30rem;
+    height: 100%;
+    height: 80vh;
+    padding-top: 40rem;
   }
   .seccionPilates .seccionPilatesS .fa-circle-chevron-up {
-    padding-left: 1rem;
-    font-size: 0.5 rem;
-  }
-  .videosP h3 {
-    font-size: 2rem;
-  }
-  .videosP h4 {
-    font-size: 2rem;
-    padding-top: 0rem;
-  }
-  .videosP iframe {
-    margin-bottom: 0rem;
-    align-items: center;
-    margin-left: 2rem;
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
   .seccionPilates .seccionPilatesR {
     height: 100%;
-    height: 50vh;
-    padding-top: 6rem;
+    height: 90vh;
+    padding-top: 22rem;
+  }
+  .seccionPilates .seccionPilatesR .H2T {
+    text-align: start;
   }
   .seccionPilates .seccionPilatesM, .seccionPilates .seccionPilatesS {
     height: 100%;
-    height: 50vh;
-    padding-top: 3rem;
+    height: 80vh;
+    padding-top: 12rem;
   }
   .seccionPilates .seccionPilatesM .img, .seccionPilates .seccionPilatesS .img {
     object-position: bottom;
   }
   .collapse-up {
     display: none;
-  }
-  .videosP h3 {
-    font-size: 2rem;
-  }
-  .videosP h4 {
-    font-size: 2rem;
-  }
-  .videosP iframe {
-    margin-bottom: 0rem;
-    align-items: center;
-    margin-left: 0rem;
   }
 }
 .seccionY .H1t {
@@ -842,17 +839,29 @@ h4 {
   height: 100vh;
   padding: 32rem 3rem 10rem 3rem;
 }
-.seccionY .seccionYogaA .btn-primary:hover:hover {
-  background-color: #6c511f;
-  color: #F2D8A7;
-}
-.seccionY .seccionYogaA .btn-primary:hover .collapse-up {
+.seccionY .seccionYogaA .collapse-up {
   position: absolute;
   bottom: 100%; /* Lo coloca arriba del botón */
   left: 50%;
   transform: translateX(-50%); /* Centra horizontalmente */
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
+}
+.seccionY .seccionYogaA .btn-primary:hover:hover {
+  background-color: #6c511f;
+  color: #F2D8A7;
+}
+.seccionY .seccionYogaA .ashtangaB .H2T {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+.seccionY .seccionYogaA .ashtangaB .fa-circle-chevron-up {
+  color: #F2D8A7;
+  font-size: 2rem;
+  padding-left: 6rem;
 }
 .seccionY .seccionYogaV {
   background-image: url(../assets/imagenes/yogaVinsaya.png);
@@ -875,6 +884,18 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
+.seccionY .seccionYogaV .vinsayaB .H2T {
+  color: #F2D8A7;
+  font-family: "Syne", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 90%;
+}
+.seccionY .seccionYogaV .vinsayaB .fa-circle-chevron-up {
+  color: #F2D8A7;
+  font-size: 2rem;
+  padding-left: 7.8rem;
+}
 .seccionY .seccionYogaR {
   background-image: url(../assets/imagenes/restaurativo.png);
   background-size: cover;
@@ -896,64 +917,76 @@ h4 {
   z-index: 1000; /* Asegura que esté por encima */
   width: 100%;
 }
-
-.videosY h3 {
-  color: #8e7850;
-  font-family: "Syne", serif;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.videosY h4 {
-  color: #8e7850;
+.seccionY .seccionYogaR .restaurativoB .H2T {
+  color: #F2D8A7;
   font-family: "Syne", serif;
   font-size: 2rem;
   font-weight: 700;
   opacity: 90%;
 }
+.seccionY .seccionYogaR .restaurativoB .fa-circle-chevron-up {
+  color: #F2D8A7;
+  font-size: 2rem;
+  padding-left: 2.5rem;
+}
 
 @media screen and (max-width: 768px) {
-  .seccionY .seccionYogaA.seccionYogaV, .seccionY .seccionYogaR {
+  .seccionY p {
+    color: #F2D8A7;
+    font-family: "Syne", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 90%;
+  }
+  .seccionY .seccionYogaA {
+    background-image: url(../assets/imagenes/yogaAshtanga1movil.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    padding-top: 40rem;
+  }
+  .seccionY .seccionYogaA .fa-circle-chevron-up {
+    display: none;
+  }
+  .seccionY .seccionYogaV {
+    background-image: url(../assets/imagenes/yogaVinsayamovil.png);
+    background-size: cover;
+    background-position: center;
     height: 100%;
-    height: 100vh;
-    padding-top: 15rem;
+    height: 80vh;
+    padding-top: 40rem;
   }
-  .videosY h3 {
-    font-size: 2rem;
+  .seccionY .seccionYogaV .fa-circle-chevron-up {
+    display: none;
   }
-  .videosY h4 {
-    font-size: 2rem;
-    padding-top: 0rem;
+  .seccionY .seccionYogaR {
+    background-image: url(../assets/imagenes/restaurativomovil.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    height: 80vh;
+    padding-top: 40rem;
   }
-  .videosY iframe {
-    margin-bottom: 0rem;
-    align-items: center;
-    margin-left: 2rem;
+  .seccionY .seccionYogaR .fa-circle-chevron-up {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
   .seccionY .seccionYogaA {
     height: 100%;
-    height: 50vh;
-    padding-top: 6rem;
+    height: 90vh;
+    padding-top: 22rem;
+  }
+  .seccionY .seccionYogaA .H2T {
+    text-align: start;
   }
   .seccionY .seccionYogaV, .seccionY .seccionYogaR {
     height: 100%;
-    height: 33vh;
-    padding-top: 3rem;
+    height: 80vh;
+    padding-top: 12rem;
   }
-  .collapse-up {
+  .seccionY .collapse-up {
     display: none;
-  }
-  .videosY h3 {
-    font-size: 2rem;
-  }
-  .videosY h4 {
-    font-size: 2rem;
-  }
-  .videosY iframe {
-    margin-bottom: 0rem;
-    align-items: center;
-    margin-left: 0rem;
   }
 }
 .seccionPrincipalHorarios {
@@ -1020,7 +1053,11 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .seccionPrincipalHorarios {
-    padding: 20rem 3rem 0rem 3rem;
+    background-image: url(../assets/imagenes/horariosmovil.png);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 28rem 3rem 0rem 3rem;
+    height: 100vh;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1046,6 +1083,8 @@ h4 {
   height: 100%;
   height: 50vh;
   margin: 3rem 0rem 10rem 0rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
 }
 .SeccionC .H2T, .seccionM .H2T {
   color: #8e7850;
@@ -1072,22 +1111,40 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .SeccionPrincipalContacto {
-    padding: 10rem 3rem 0rem 3rem;
+    padding: 18rem 3rem 0rem 3rem;
+    height: 40vh;
+  }
+  .SeccionPrincipalContacto .H1t {
+    font-size: 2rem;
+  }
+  .SeccionC {
+    height: 50vh;
+    margin: 3rem 3rem 2rem 3rem;
+  }
+  .seccionM {
+    height: 50vh;
+    margin: 3rem 4rem 2rem 4rem;
+    padding-right: 10rem;
   }
 }
 @media screen and (max-width: 480px) {
   .SeccionPrincipalContacto {
     background-size: cover;
-    padding: 8rem 2rem 0.5rem 2rem;
-    height: 50%;
+    padding: 10rem 2rem 0.5rem 2rem;
+    height: 35vh;
     background-image: url(../assets/imagenes/CONTACTOMQ.png);
     text-align: start;
   }
   .SeccionPrincipalContacto .H1t {
     font-size: 1.5rem;
   }
-  .SeccionC, .seccionM {
-    margin-top: 1rem;
-    padding: 1rem 1rem 3rem 1rem;
+  .SeccionC {
+    height: 70vh;
+    margin: 1rem;
+  }
+  .seccionM {
+    height: 70vh;
+    margin: 3rem 1rem;
+    padding-right: 5rem;
   }
 }

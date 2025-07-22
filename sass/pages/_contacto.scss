@@ -15,6 +15,8 @@
     height: 100%;
     height: 50vh;
     margin: 3rem 0rem 10rem 0rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
     .H2T{
         color:#8e7850;
         font-size: 2rem;
@@ -39,22 +41,40 @@
 }
 @media screen and (max-width: 768px){
     .SeccionPrincipalContacto{
-        padding: 10rem 3rem 0rem 3rem;
+        padding: 18rem 3rem 0rem 3rem;
+        height: 40vh;
+        .H1t{
+            font-size: $font-h3;
+        }
     }
+        .SeccionC{
+        height: 50vh;
+        margin: 3rem 3rem 2rem 3rem;
+    }
+        .seccionM{
+            height: 50vh;
+            margin: 3rem 4rem 2rem 4rem;
+            padding-right:10rem;
+        }
 }
 @media screen and (max-width: 480px){
     .SeccionPrincipalContacto{
         background-size: cover;
-        padding: 8rem 2rem 0.5rem 2rem;
-        height: 50%;
+        padding: 10rem 2rem 0.5rem 2rem;
+        height: 35vh;
         background-image: url(../assets/imagenes/CONTACTOMQ.png);
         text-align: start;
         .H1t{
             font-size: $font-h2-movil;
         }
     }
-    .SeccionC,.seccionM{
-        margin-top: 1rem;
-        padding: 1rem 1rem 3rem 1rem;
+       .SeccionC{
+        height: 70vh;
+        margin: 1rem;
     }
+        .seccionM{
+            height: 70vh;
+            margin: 3rem 1rem;
+            padding-right:5rem;
+        }
 }

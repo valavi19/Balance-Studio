@@ -12,7 +12,8 @@
             }
             .fa-circle-chevron-up{
             color: $color-beige;
-            font-size: $font-btn-lg;
+            font-size: $font-h4;
+            padding-left: 4.2rem;
             }
         }
     p{
@@ -43,7 +44,18 @@
     }
     .collapse-up {
         @include collapse;
-        }  
+        } 
+        .stottB{
+        .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 9.2rem;
+            }
+        } 
 }
 .seccionPilatesS{
     @include bg-cover-custom("../assets/imagenes/Stott.png", $size: cover, $position: center);
@@ -54,72 +66,66 @@
         @include collapse;
         }  
     }
-}
-.videosP{
-    h3{
-        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h1, $weight: 700);
-    }
-    h4{
-        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h4, $weight: 700);
-        opacity: 90%;
-    }
+    .mattB{
+        .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 9.2rem;
+            }
+        }
 }
 @media screen and (max-width: 768px){
     .seccionPilates{
+        p{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h3, $weight: 400);
+        opacity: 90%;
+    }
         .seccionPilatesR{
             @include bg-cover-custom("../assets/imagenes/reformermovil.png", $size: cover, $position: center);
-            height: 100vh;
-            padding-top: 15rem;
+            height: 90vh;
+            padding-top: 40rem;
             .fa-circle-chevron-up{
-            padding-left: 1rem;
-            font-size: 0.5 rem;
+            display: none;
             }
         }
         .seccionPilatesM{
-            @include bg-cover-custom("../assets/imagenes/restaurativomovil.png", $size: cover, $position: center);
-            height: 100vh;
-            padding-top: 30rem;
+            @include bg-cover-custom("../assets/imagenes/Mattmovil.png", $size: cover, $position: center);
+            height: 100%;
+            height: 80vh;
+            padding-top: 40rem;
             .fa-circle-chevron-up{
-            padding-left: 1rem;
-            font-size: 0.5 rem;
+            display: none;
             }
         }
          .seccionPilatesS{
             @include bg-cover-custom("../assets/imagenes/stottmovil.png", $size: cover, $position: center);
-            height: 100vh;
-            padding-top: 30rem;
+            height: 100%;
+            height: 80vh;
+            padding-top: 40rem;
             .fa-circle-chevron-up{
-            padding-left: 1rem;
-            font-size: 0.5 rem;
+            display: none;
             }
-        }
-    }
-    .videosP{
-        h3{
-            font-size: $font-h3;
-        }
-        h4{
-            font-size: $font-h4;
-            padding-top: 0rem;
-        }
-        iframe{
-            margin-bottom: 0rem;
-            align-items: center;
-            margin-left: 2rem;
         }
     }
 }
 @media screen and (max-width: 480px){
     .seccionPilates{
         .seccionPilatesR{
+            .H2T{
+                text-align: start;
+            }
             height: 100%;
-            height: 50vh;
-            padding-top: 6rem;
+            height: 90vh;
+            padding-top: 22rem;
         }
        .seccionPilatesM,.seccionPilatesS{
             height: 100%;
-            height: 50vh;
-            padding-top: 3rem;
+            height: 80vh;
+            padding-top: 12rem;
             .img{
                 object-position: bottom;
             }
@@ -127,18 +133,5 @@
     }
     .collapse-up{
         display: none;
-    }
-    .videosP{
-        h3{
-            font-size: $font-h3;
-        }
-        h4{
-            font-size: $font-h4;
-        }
-        iframe{
-            margin-bottom: 0rem;
-            align-items: center;
-            margin-left: 0rem;
-        }
     }
 }
