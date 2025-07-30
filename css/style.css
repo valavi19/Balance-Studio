@@ -248,6 +248,7 @@ h4 {
     height: 100vh;
   }
   .SeccionPrincipalInicio a {
+    font-weight: 800;
     font-size: 1rem;
     padding: 1.5rem 2rem;
     background-color: #F2D8A7;
