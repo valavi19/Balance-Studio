@@ -1065,6 +1065,11 @@ h4 {
     padding: 15rem 3rem 0rem 3rem;
   }
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .SeccionPrincipalContacto {
   background-image: url(../assets/imagenes/CONTACTO.png);
   background-size: cover;

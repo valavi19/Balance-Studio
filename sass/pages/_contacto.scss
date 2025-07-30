@@ -3,6 +3,10 @@
 @import "../abstract/mixin";
 
 //Página Contacto
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 .SeccionPrincipalContacto{
     @include bg-cover-custom('../assets/imagenes/CONTACTO.png', $size: cover, $position: center bottom);
     @include seccion ($height: 62vh, $padding: 22rem 2rem 0rem 2rem);
