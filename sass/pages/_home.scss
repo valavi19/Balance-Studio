@@ -214,7 +214,6 @@
         height: 100vh;
 
             a{
-                font-weight: 800;
                 @include bt-custom;
                 margin-left:5rem;
                 margin-top: 2rem;
@@ -253,13 +252,13 @@
     padding-top: 18rem;
     a{
         @include boton($bg: $color-beige, $color: $color-marron-profundo);
-        margin-top:2rem; 
+        margin-top:2rem;
+    }
 
       .btn-primary:hover{
         @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
         }
     }
-}
 .seccionEncuentraY{
     @include bg-cover('../assets/imagenes/EncuentraY.png');
     height: 100%;

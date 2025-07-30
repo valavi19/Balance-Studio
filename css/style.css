@@ -248,7 +248,6 @@ h4 {
     height: 100vh;
   }
   .SeccionPrincipalInicio a {
-    font-weight: 800;
     font-size: 1rem;
     padding: 1.5rem 2rem;
     background-color: #F2D8A7;
@@ -303,7 +302,7 @@ h4 {
   border: none;
   margin-top: 2rem;
 }
-.seccionEncuentraP a .btn-primary:hover:hover {
+.seccionEncuentraP .btn-primary:hover:hover {
   background-color: #6c511f;
   color: #F2D8A7;
 }
