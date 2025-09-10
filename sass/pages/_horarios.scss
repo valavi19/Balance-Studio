@@ -1,0 +1,54 @@
+//variables
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+//Página Horarios
+.seccionPrincipalHorarios{
+    @include bg-cover-custom('../assets/imagenes/HORARIOSo.png', $size: cover, $position: center bottom);
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 20rem 10rem 10rem 10rem;
+    .H1t{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h1, $weight: 700);
+    }
+    a{
+        @include boton($bg: $color-beige, $color: $color-marron-profundo);
+    }
+    .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+    }
+}
+// Estilos generales de la tabla
+.horariosP,.horariosY{
+    .H2T{
+        @include titulo($color: $color-marron-medio, $font: $font-secundaria, $size: $font-h1, $weight: 700);
+    }
+    .tablahP {
+        font-family: $font-principal;
+      }
+      //Encabezado
+      .tablahP thead th {
+        @include tabla ($color: $color-marron-oscuro, $weight:700);
+      }
+      .tablahP tbody td {
+        @include tabla-cuerpo;
+    }
+    .tablahP tbody th{
+        @include  tabla ($color: $color-marron-medio, $weight:400);
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionPrincipalHorarios{
+        @include bg-cover-custom('../assets/imagenes/horariosmovil.png', $size: cover, $position: center bottom);
+        padding: 28rem 3rem 0rem 3rem;
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 480px){
+    .seccionPrincipalHorarios{
+        padding: 15rem 3rem 0rem 3rem;
+    }
+}

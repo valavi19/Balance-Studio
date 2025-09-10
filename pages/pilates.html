@@ -5,19 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pilates | Balance Studio</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marcellus&family=Syne:wght@400..800&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/a1e1588f6d.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
       <header>
         <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid g-0 position-absolute top-0 start-0 z-3 mt-5 ps-3">
               <a class="navbar-brand" href="../index.html">
-                <img class="imagenLogo" src="../assets/IMG/Group beige.png" alt="LogoBalance,figura geometrica con forma de persona haciendo pose de yoga y el nombre Balance Studio">
+                <img class="imagenLogo" src="../assets/imagenes/Groupbeige.png" alt="LogoBalance,figura geometrica con forma de persona haciendo pose de yoga y el nombre Balance Studio">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,106 +57,94 @@
             </div>
           </nav>
     </header>
-    <main class="seccionPilates">
-        <Section class="seccionPilatesR">
-            <div><h1 class="TítuloP">Pilates</h1></div>
-            <div><h2 class="TítuloS">Pilates Reformer</h2></div>
-            <div>
-                <a href="./horarios.html" class="AcciónS">Conocé los horarios</a>
-            </div>
-        </Section>
-        <section class="seccionPilatesM">
-            <div><h2 class="TítuloS">Pilates Matt</h2></div>
-
-            <div>
-                <a href="./horarios.html" class="AcciónS">Conocé los horarios</a>
-            </div>
-        </section>
-        <section class="seccionPilatesS">
-            <div>
-                <h2 class="TítuloS">Pilates Stott</h2>
-            </div>
-            <div>
-                <a href="./horarios.html" class="AcciónS">Conocé los horarios</a>
-            </div>    
-        </section>
-        <section class="VideosP">
-            <h3 class="TítuloT">Vídeos que te podrían gustar antes de comenzar tus clases</h3>
-                <div>
-                    <h4 class="Título4">Pilates Reformer</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxHth-f9-vw?si=bNrfvEFI1QbBxUVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h4 class="Título4">Pilates Matt</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NVFcCx5W0dc?si=kGeiVBqCs_GYPjOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <h4 class="Título4">Pilates Stott</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vObfEzjb7Ls?si=51AyxHMAPDQRk8kr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-        </section>
+    <main class=" seccionPilates container-fluid">
+      <div class="row">
+        <div class="seccionPilatesR col-lg-4 col-md-12 col-12">
+          <div class="position-relative">
+            <h1 class="H1t">Pilates</h1>
+            <button class="btn btn-primary border-0 bg-transparent ps-0 reformerB" data-bs-toggle="collapse" data-bs-target="#reformer">
+              <h2 class="H2T fa-solid">Pilates Reformer</h2>
+              <i class="fa-solid fa-circle-chevron-up"></i>
+            </button>
+            <div class="collapse collapse-up mt-1" id="reformer">
+              <p>El Pilates Reformer es una máquina versátil diseñada para realizar ejercicios de Pilates con más apoyo y desafío.</p><p>Es ideal para mejorar la postura, fortalecer los músculos, aumentar la flexibilidad y aliviar tensiones, todo de una manera suave y controlada.</p>
+            </div>  
+              <div class="d-grid gap-2 col-12 mt-1">
+                <a class="btn btn-primary border-0 py-3 rounded-4" href="./horarios.html" role="button">Conocé los horarios</a>
+              </div>
+          </div>
+        </div>
+        <div class="seccionPilatesM col-lg-4 col-md-12 col-12">
+          <div class="position-relative">
+            <button class="btn btn-primary border-0 bg-transparent ps-0 stottB" data-bs-toggle="collapse" data-bs-target="#stott">
+              <h2 class="H2T fa-solid">Pilates Stott</h2>
+              <i class="fa-solid fa-circle-chevron-up"></i>
+            </button>
+            <div class="collapse collapse-up mt-1" id="stott">
+              <p>Se enfoca en alinear la columna, reforzar el core y mejorar la estabilidad, usando técnicas seguras y personalizadas.</p>
+              <p>¡Es perfecto para fortalecer tu cuerpo, proteger tus articulaciones y moverte con mayor confianza!</p>
+            </div>  
+              <div class="d-grid gap-2 col-12 mt-1">
+                <a class="btn btn-primary border-0 py-3 rounded-4" href="./horarios.html" role="button">Conocé los horarios</a>
+              </div>
+          </div>
+        </div>
+        <div class="seccionPilatesS col-lg-4 col-md-12 col-12">
+          <div class="position-relative">
+            <button class="btn btn-primary border-0 bg-transparent ps-0 mattB" data-bs-toggle="collapse" data-bs-target="#matt">
+              <h2 class="H2T fa-solid">Pilates Matt</h2>
+              <i class="fa-solid fa-circle-chevron-up"></i>
+            </button>
+            <div class="collapse collapse-up mt-1" id="matt">
+              <p>Se practica en una colchoneta en el suelo. No necesitas máquinas, solo tu propio cuerpo y, a veces, accesorios como pelotas o bandas elásticas.</p>
+              <p>Ideal para fortalecer el core, mejorar la flexibilidad, la postura y la coordinación.</p>
+            </div>  
+              <div class="d-grid gap-2 col-12 mt-1">
+                <a class="btn btn-primary border-0 py-3 rounded-4" href="./horarios.html" role="button">Conocé los horarios</a>
+              </div>
+       </div>
+      </div>
     </main>
     <footer class="footer Footerbg">
-      <div class="row container-fluid g-0 mt-5 pt-4 ps-3 justify-content-evenly">
-         <div class="col-lg-2 col-md-1 col-12">
-           <img src="../assets/IMG/Group beige.png" alt="Logo Balance Studio" width="300px">
-         </div>
-         <div class="col-lg-2 col-md-1 col-12">
-           <nav> 
-               <ul>
-                   <li>
-                       <a href="../index.html">Inicio</a>
-                   </li>
-                   <li>
-                       <a href="./nosotros.html">Nosotros</a>
-                   </li>
-                   <li>
-                       <a href="./horarios.html">Horarios</a>
-                   </li>
-                   <li>
-                       <a href="./clases.html">Clases</a>
-                   </li>
-                   <li>
-                       <a href="./contacto.html">Contacto</a>
-                   </li>
-               </ul>
-           </nav>
-         </div>
-         <div class="col-lg-2 col-md-1 col-12">
-           <ul>
-               <li>
-                   Términos y condiciones
-               </li>
-               <li>
-                   Políticas de devoluciones
-               </li>
-               <li>
-                   Formas de pago
-               </li>
-               <li>
-                   Ayuda
-               </li>
-               <li>
-                   Preguntas frecuentes
-               </li>
-           </ul>
-         </div>
-         <div class="col-lg-2 col-md-1 col-12">
-           <ul>
-               <li> 
-                   Trabaja con nosotros
-               </li>
-           </ul>
-         </div>
-         <div class="col-lg-2 col-md-1 col-12 linkredes">
-           <h4>Síguenos en redes sociales</h4>
-           <a href="https://workspace.google.com/intl/es-419_ar/gmail/"><i class="fa-solid fa-square-envelope"></i>
-           <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i>
-           <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-square-facebook"></i>
-           <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>
-         </div>
-     </div>
-   </footer>
+           <div class="row container-fluid g-0 mt-5 pt-4 justify-content-evenly">
+              <div class="col-lg-2 col-md-4 col-12">
+                <img src="../assets/imagenes/Groupbeige.png" alt="Logo Balance Studio" width="300px">
+              </div>
+              <div class="lista col-lg-2 col-md-1 col-12">
+                <nav> 
+                  <div class="list-group">
+                    <a href="./index.html" class="list-group-item list-group-item-action bg-transparent border-0  pb-1">Inicio</a>
+                    <a href="./pages/nosotros.html" class="list-group-item list-group-item-action bg-transparent border-0  pb-1">Nosotros</a>
+                    <a href="./pages/clases.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-1">Clases</a>
+                    <a href="./pages/horarios.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-1 ">Horarios</a>
+                    <a href="./pages/contacto.html" class="list-group-item list-group-item-action bg-transparent border-0 pb-3 ">Contacto</a>
+                  </div>
+                </nav>
+              </div>
+              <div class="col-lg-2 col-md-2 col-12">
+                <ul class="lista list-group">
+                  <li class="list-group-item bg-transparent border-0 pb-1">Términos y condiciones</li>
+                  <li class="list-group-item bg-transparent border-0 pb-1">Políticas de devoluciones</li>
+                  <li class="list-group-item bg-transparent border-0 pb-1">Formas de pago</li>
+                  <li class="list-group-item bg-transparent border-0 pb-1">Ayuda</li>
+                  <li class="list-group-item bg-transparent border-0 pb-3">Preguntas frecuentes</li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-2 col-12">
+                <ul class="lista list-group">
+                  <li class="list-group-item bg-transparent border-0 pb-1">Trabaja con nosotros</li>
+              </div>
+              <div class="col-lg-2 col-md-5 col-12 linkredes">
+                <h4>Síguenos en redes sociales</h4>
+                <div class="ms-5">
+                 <a href="https://workspace.google.com/intl/es-419_ar/gmail/" class="mail"><i class="fa-solid fa-square-envelope"></i>
+                 <a href="https://web.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i>
+                 <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-square-facebook"></i>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>
+                 </div>
+              </div>
+          </div>
+        </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
  </body>
 </html>

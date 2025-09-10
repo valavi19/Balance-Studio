@@ -1,0 +1,114 @@
+// Botón estándar
+@mixin boton($bg: $color-beige, $color: $color-marron-profundo) {
+  background-color: $bg;
+  color: $color;
+  font-size: $font-base;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+// Botón hover
+@mixin boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige) {
+  &:hover {
+    background-color: $bg-hover;
+    color: $color-hover;
+  }
+}
+
+//Botón custom
+@mixin bt-custom {
+  font-size: $font-base;
+  padding: 1.5rem 2rem;
+  background-color: $color-beige;
+  color: $color-marron-profundo;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+// Botón secundario (invertido)
+@mixin boton-secundario($bg: $color-marron-claro, $color: $color-beige) {
+  background-color: $bg;
+  color: $color;
+}
+
+// Mixin para títulos
+@mixin titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h1, $weight: 700) {
+  color: $color;
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+// Centrado con flex
+@mixin flex-center {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+// Imagen de fondo
+@mixin bg-cover($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
+@mixin bg-cover-custom($url, $size: cover, $position: center) {
+  background-image: url(#{$url});
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin bg-cover-movil ($url) {
+  background-image: url($url);
+  background-position: center;
+  text-align: center;
+}
+
+// Estilo tabla
+@mixin tabla ($color: $color-marron-medio, $weight:700){
+  background-color: $color;
+  color: white;
+  font-weight: $weight;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin tabla-cuerpo {
+  color: $color-marron-oscuro;
+
+  &:hover {
+    background-color: $color-marron-medio;
+    opacity: 0.8;
+    color: white;
+  }
+}
+
+//Collapse
+@mixin collapse {
+    position: absolute;
+    bottom: 100%; /* Lo coloca arriba del botón */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    z-index: 1000; /* Asegura que esté por encima */
+    width: 100%;
+}
+
+//Sección pilates
+@mixin seccionPilates {
+    height: 100%;
+    height: 100vh;
+    text-align: start;
+    padding: 36rem 3rem 10rem 3rem;
+}
+
+//seccionprincipal
+@mixin seccion ($height: 62vh, $padding: 22rem 2rem 0rem 2rem){
+    height: 100%;
+    height: $height;
+    text-align: start;
+    padding: $padding;
+}

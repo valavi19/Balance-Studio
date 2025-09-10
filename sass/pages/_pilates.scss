@@ -1,0 +1,137 @@
+//variables
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+//Pagina pilates
+.seccionPilates{
+    .reformerB{
+        .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 4.2rem;
+            }
+        }
+    p{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-base, $weight: 400);
+        opacity: 90%;
+    }
+    a{
+        @include boton($bg: $color-beige, $color: $color-marron-profundo);
+    }
+    .seccionPilatesR{
+        @include bg-cover-custom('../assets/imagenes/Reformer.png', $size: cover, $position: center);
+        height: 100%;
+        height: 100vh;
+        text-align: start; 
+        padding: 32rem 3rem 10rem 3rem;
+        .btn-primary:hover{
+            @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+        }
+        .collapse-up {
+            @include collapse;
+            }    
+}
+.seccionPilatesM{
+    @include bg-cover-custom('../assets/imagenes/Matt.png', $size: cover, $position: center);
+    @include seccionPilates;
+    .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+    }
+    .collapse-up {
+        @include collapse;
+        } 
+        .stottB{
+        .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 9.2rem;
+            }
+        } 
+}
+.seccionPilatesS{
+    @include bg-cover-custom("../assets/imagenes/Stott.png", $size: cover, $position: center);
+    @include seccionPilates;
+    .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);}
+    .collapse-up {
+        @include collapse;
+        }  
+    }
+    .mattB{
+        .H2T{
+            @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+            opacity: 90%;
+            }
+            .fa-circle-chevron-up{
+            color: $color-beige;
+            font-size: $font-h4;
+            padding-left: 9.2rem;
+            }
+        }
+}
+@media screen and (max-width: 768px){
+    .seccionPilates{
+        p{
+        @include titulo($color: $color-beige, $font: $font-secundaria, $size: $font-h3, $weight: 400);
+        opacity: 90%;
+    }
+        .seccionPilatesR{
+            @include bg-cover-custom("../assets/imagenes/reformermovil.png", $size: cover, $position: center);
+            height: 90vh;
+            padding-top: 40rem;
+            .fa-circle-chevron-up{
+            display: none;
+            }
+        }
+        .seccionPilatesM{
+            @include bg-cover-custom("../assets/imagenes/mattmovil.png", $size: cover, $position: center);
+            height: 100%;
+            height: 80vh;
+            padding-top: 40rem;
+            .fa-circle-chevron-up{
+            display: none;
+            }
+        }
+         .seccionPilatesS{
+            @include bg-cover-custom("../assets/imagenes/stottmovil.png", $size: cover, $position: center);
+            height: 100%;
+            height: 80vh;
+            padding-top: 40rem;
+            .fa-circle-chevron-up{
+            display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .seccionPilates{
+        .seccionPilatesR{
+            .H2T{
+                text-align: start;
+            }
+            height: 100%;
+            height: 90vh;
+            padding-top: 22rem;
+        }
+       .seccionPilatesM,.seccionPilatesS{
+            height: 100%;
+            height: 80vh;
+            padding-top: 12rem;
+            .img{
+                object-position: bottom;
+            }
+       }
+    }
+    .collapse-up{
+        display: none;
+    }
+}

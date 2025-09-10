@@ -1,0 +1,119 @@
+//variables
+@import "../abstract/variables";
+//mixin
+@import "../abstract/mixin";
+
+//Página nosotros
+.secciónPrincipalNosotrosIzq{
+    @include bg-cover-custom ('../assets/imagenes/NOSOTROS.png',$size: cover, $position: center bottom);
+    height: 100%;
+    height: 100vh;
+    .H1t {
+        padding-top: 150px;
+        padding-left: 20px;
+        @include titulo ($color: $color-beige, $font: $font-secundaria, $size: $font-h1, $weight: 700);
+    }
+}
+@media screen and (max-width: 768px){
+    .secciónPrincipalNosotrosIzq{
+        .H1t{
+            font-size: $font-btn-lg;
+            text-align: center;
+        }
+    }
+}
+.secciónPrincipalNosotrosDrcha{
+    padding-top: 13rem;
+    p{
+        color: $color-marron-oscuro;
+    }
+    a{
+       @include boton($bg: $color-marron-claro, $color: $color-beige);
+      }
+      .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+    }
+}
+@media screen and (max-width: 768px){
+    .secciónPrincipalNosotrosDrcha{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        p{
+            font-size: $font-base;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .secciónPrincipalNosotrosDrcha{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        p{
+            font-size: $font-base;
+        }
+    }
+}
+//Sección de Instructores
+.colorTituloI{
+    color: $color-verde-opaco;
+}
+.seccionIntruct{
+    img{
+        object-fit: cover;
+        width: 80%;
+        height: 100%;
+        height: 20vh;
+    }
+    .H2T{
+        color: $color-verde-opaco;
+    }
+    a{
+        @include boton($bg: $color-marron-claro, $color: $color-beige)
+    }
+    h3{
+        @include titulo($color: $color-marron-claro, $font: $font-secundaria, $size: $font-btn-lg, $weight: 700);
+        margin-top: 1rem;
+    }
+    p{
+        color: $color-marron-oscuro;
+        margin-bottom: 30px;
+    }
+    .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige)
+    }
+}
+.botonTH{
+    a{
+        @include boton($bg: $color-marron-claro, $color: $color-beige);display:inline-block;
+    }
+    .btn-primary:hover{
+        @include boton-hover($bg-hover: $color-marron-oscuro, $color-hover: $color-beige);
+    }
+}
+@media screen and (max-width: 768px){
+    .seccionIntruct{
+        img{
+            height: 100%;
+            height: 30vh;
+            width: 60%;
+        }
+        .H2T,h3{
+            font-size: $font-btn-lg;
+        }
+        p{
+            font-size: $font-base;
+        }
+        a{
+            font-size: $font-base;
+            padding:10px 30px 10px 30px;
+            border-radius: 10px;
+        }
+    }
+    .botonTH{
+        margin-left: 0rem;
+        a{
+            font-size: $font-base;
+            padding:10px 50px 10px 50px;
+            border-radius: 10px;
+        }
+    }
+}
